@@ -7,11 +7,24 @@
   <style>
 
 :root{--bg:#f7f7f5;--card:#fff;--text:#1d1d1f;--muted:#6f6f73;--line:#e3e3e0;--accent:#ff5a5f;--accent-dark:#e8464b;--soft:#f1f1ee;--city:#2f3a45;--map:#e9ece8}
-*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,Arial,sans-serif}body{background:var(--bg);color:var(--text)}button{cursor:pointer;font:inherit}.shell{max-width:1180px;margin:auto;min-height:100vh;padding:24px 24px 96px}.header{background:var(--card);border:1px solid var(--line);border-radius:30px;padding:24px;margin-bottom:18px;display:flex;justify-content:space-between;gap:24px;align-items:center}.brand{display:flex;align-items:center;justify-content:space-between;gap:16px}.logo{font-size:36px;font-weight:900;letter-spacing:2px}.sub{color:var(--accent);letter-spacing:4px;font-size:12px;text-transform:uppercase}.headtext h1{font-size:28px;margin-bottom:6px}.headtext p,.muted{color:var(--muted);font-size:14px;line-height:1.45}.profile{width:48px;height:48px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-weight:800;border:1px solid var(--line)}.panel,.card{background:var(--card);border:1px solid var(--line);border-radius:30px;overflow:hidden}.ph{padding:20px;border-bottom:1px solid var(--line)}.ph h2{font-size:20px;margin-bottom:6px}.ph p{color:var(--muted);font-size:13px;line-height:1.4}.section{padding:18px}.grid2{display:grid;grid-template-columns:1fr 1.2fr;gap:18px}.gridmap{display:grid;grid-template-columns:1fr 360px;gap:18px}.grid3{display:grid;grid-template-columns:290px 1fr 330px;gap:18px}.row{display:flex;align-items:end;justify-content:space-between;margin-bottom:12px}.row h2{font-size:20px}.row a{color:var(--accent);font-size:13px;font-weight:800;text-decoration:none}.search,.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.search{margin-bottom:14px}.search input,.toolbar input{flex:1;min-width:220px;border:1px solid var(--line);background:#fbfbfa;border-radius:16px;padding:13px 14px;font-size:14px;outline:0}.primary,.search button{border:0;background:var(--accent);color:white;border-radius:14px;padding:10px 14px;font-weight:800}.secondary,.chip{border:1px solid var(--line);background:var(--soft);color:var(--text);border-radius:999px;padding:10px 12px;font-size:12px;font-weight:800}.chip.active{background:var(--accent);border-color:var(--accent);color:#fff}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:calc(100% - 48px);max-width:1180px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border:1px solid var(--line);border-bottom:0;border-radius:28px 28px 0 0;display:grid;grid-template-columns:repeat(5,1fr);padding:10px 8px 14px;z-index:10}.nav button{background:transparent;border:0;color:var(--muted);font-size:12px;font-weight:800;display:grid;gap:5px;place-items:center}.nav span{font-size:21px}.nav .active{color:var(--accent-dark)}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,Arial,sans-serif}body{background:var(--bg);color:var(--text)}button{cursor:pointer;font:inherit}.shell{max-width:1180px;margin:auto;min-height:100vh;padding:24px 24px 96px}.header{background:var(--card);border:1px solid var(--line);border-radius:30px;padding:24px;margin-bottom:18px;display:flex;justify-content:space-between;gap:24px;align-items:center}.brand{display:flex;align-items:center;justify-content:space-between;gap:16px}.logo{font-size:36px;font-weight:900;letter-spacing:2px}.sub{color:var(--accent);letter-spacing:4px;font-size:12px;text-transform:uppercase}.headtext h1{font-size:28px;margin-bottom:6px}.headtext p,.muted{color:var(--muted);font-size:14px;line-height:1.45}.profile{width:48px;height:48px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-weight:800;border:1px solid var(--line)}.panel,.card{background:var(--card);border:1px solid var(--line);border-radius:30px;overflow:hidden}.ph{padding:20px;border-bottom:1px solid var(--line)}.ph h2{font-size:20px;margin-bottom:6px}.ph p{color:var(--muted);font-size:13px;line-height:1.4}.section{padding:18px}.grid2{display:grid;grid-template-columns:1fr 1.2fr;gap:18px}.gridmap{display:grid;grid-template-columns:1fr 360px;gap:18px}.grid3{display:grid;grid-template-columns:290px 1fr 330px;gap:18px}.announcement-grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px}.announcement-grid .feed{gap:16px}.row{display:flex;align-items:end;justify-content:space-between;margin-bottom:12px}.row h2{font-size:20px}.row a{color:var(--accent);font-size:13px;font-weight:800;text-decoration:none}.search,.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.search{margin-bottom:14px}.search input,.toolbar input{flex:1;min-width:220px;border:1px solid var(--line);background:#fbfbfa;border-radius:16px;padding:13px 14px;font-size:14px;outline:0}.primary,.search button{border:0;background:var(--accent);color:white;border-radius:14px;padding:10px 14px;font-weight:800}.secondary,.chip{border:1px solid var(--line);background:var(--soft);color:var(--text);border-radius:999px;padding:10px 12px;font-size:12px;font-weight:800}.chip.active{background:var(--accent);border-color:var(--accent);color:#fff}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:calc(100% - 48px);max-width:1180px;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border:1px solid var(--line);border-bottom:0;border-radius:22px 22px 0 0;display:grid;grid-template-columns:repeat(5,1fr);padding:7px 8px 9px;z-index:10}.nav button{background:transparent;border:0;color:var(--muted);font-size:11px;font-weight:800;display:grid;gap:3px;place-items:center;min-height:46px}.nav-icon{width:25px;height:25px;display:grid;place-items:center;font-size:20px;line-height:1}.nav-icon.radar-icon{font-size:24px}.nav .nav-usericon{width:25px;height:25px;border-radius:50%;background:var(--soft);border:1px solid var(--line);display:grid;place-items:center;font-size:10px;font-weight:900;letter-spacing:.4px;line-height:1}.nav .active .nav-usericon{background:var(--accent);border-color:var(--accent);color:#fff}.nav .active{color:var(--accent-dark)}
 .points{background:linear-gradient(135deg,#222,#3b3b3b);color:#fff;border-radius:28px;padding:24px;box-shadow:0 14px 30px rgba(0,0,0,.12)}.ptop{display:flex;justify-content:space-between;margin-bottom:22px}.badge{background:rgba(255,255,255,.12);padding:8px 12px;border-radius:999px;font-size:12px}.num{font-size:46px;font-weight:900}.points p{color:rgba(255,255,255,.78);font-size:14px}.progress{height:10px;background:rgba(255,255,255,.15);border-radius:99px;overflow:hidden;margin-top:8px}.progress span{display:block;width:68%;height:100%;background:var(--accent)}.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.quick button{border:0;border-radius:18px;background:var(--card);padding:14px 8px;font-weight:800}.shops{display:grid;gap:12px}.shop{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:14px;display:grid;grid-template-columns:58px 1fr auto;gap:12px;align-items:center}.ico{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;font-size:24px;background:var(--soft)}.shop h3{font-size:16px;margin-bottom:4px}.shop p,.event p,.compact p{font-size:13px;color:var(--muted);line-height:1.35}.meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.pill{border-radius:999px;background:#f4f4f2;color:var(--muted);padding:5px 8px;font-size:11px;font-weight:800}.pill.a{color:var(--accent-dark);background:#fff0f0}.sp{text-align:right;font-weight:900;color:var(--accent-dark)}.sp small{display:block;color:var(--muted);font-size:11px}.coupon,.scan,.eventcard{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;display:flex;gap:16px;align-items:center;justify-content:space-between}.qr{width:110px;height:110px;border-radius:24px;background:linear-gradient(90deg,#111 10px,transparent 10px) 0 0/22px 22px,linear-gradient(#111 10px,transparent 10px) 0 0/22px 22px,#fff;border:10px solid #fff;box-shadow:0 8px 24px rgba(0,0,0,.08)}
-.map{position:relative;height:560px;background:linear-gradient(45deg,transparent 48%,rgba(255,255,255,.8) 49%,rgba(255,255,255,.8) 52%,transparent 53%) 0 0/160px 160px,linear-gradient(-35deg,transparent 48%,rgba(255,255,255,.75) 49%,rgba(255,255,255,.75) 52%,transparent 53%) 30px 40px/190px 160px,radial-gradient(circle at 15% 20%,rgba(133,168,141,.45) 0 12%,transparent 13%),radial-gradient(circle at 82% 74%,rgba(216,201,174,.55) 0 14%,transparent 15%),var(--map);overflow:hidden}.river{position:absolute;left:-80px;top:240px;width:120%;height:92px;background:rgba(143,165,186,.45);transform:rotate(-10deg);border-radius:999px}.street{position:absolute;background:rgba(255,255,255,.9);border-radius:999px}.s1{left:8%;top:14%;width:70%;height:16px;transform:rotate(17deg)}.s2{left:10%;top:60%;width:78%;height:15px;transform:rotate(-21deg)}.s3{left:34%;top:4%;width:15px;height:84%;transform:rotate(5deg)}.s4{left:68%;top:12%;width:14px;height:74%;transform:rotate(-15deg)}.s5{left:6%;top:42%;width:88%;height:13px}.pin{position:absolute;width:44px;height:44px;border-radius:50% 50% 50% 8px;background:var(--accent);transform:rotate(-45deg);display:grid;place-items:center;box-shadow:0 12px 24px rgba(232,70,75,.28);border:3px solid #fff;z-index:3}.pin:hover{transform:rotate(-45deg) scale(1.08)}.pin span{transform:rotate(45deg);font-size:20px}.p1{left:24%;top:24%}.p2{left:52%;top:34%}.p3{left:70%;top:54%}.p4{left:34%;top:66%}.p5{left:78%;top:28%}.p6{left:14%;top:50%}.tip{position:absolute;left:52%;top:18%;width:230px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:0 18px 40px rgba(0,0,0,.13);z-index:4}.tip h3{font-size:15px}.tip p{font-size:12px;color:var(--muted);line-height:1.35;margin:6px 0 10px}.events,.sidebody{padding:16px;display:grid;gap:12px}.event,.compact{border:1px solid var(--line);border-radius:22px;padding:14px;background:#fbfbfa;display:grid;gap:10px}.etop{display:flex;justify-content:space-between;gap:10px}.date{width:54px;height:54px;border-radius:18px;background:var(--text);color:white;display:grid;place-items:center;text-align:center;font-weight:900;line-height:1.05}.date small{display:block;font-size:10px;color:rgba(255,255,255,.78)}
-.city{padding:20px;display:grid;gap:16px}.citylogo{height:90px;border-radius:24px;background:linear-gradient(135deg,#222,var(--city));color:#fff;display:flex;align-items:center;gap:14px;padding:18px}.seal{width:50px;height:50px;border-radius:16px;background:rgba(255,255,255,.14);display:grid;place-items:center;font-size:24px}.cat{border:1px solid var(--line);background:#fbfbfa;border-radius:18px;padding:13px;display:flex;align-items:center;gap:10px}.cat.active{border-color:rgba(255,90,95,.35);background:#fff5f5}.catico{width:36px;height:36px;border-radius:12px;background:var(--soft);display:grid;place-items:center}.feed{padding:18px;display:grid;gap:14px}.post{border:1px solid var(--line);border-radius:26px;background:#fbfbfa;padding:18px;display:grid;gap:14px}.posttop{display:flex;justify-content:space-between;gap:14px}.author{display:flex;gap:12px;align-items:center}.avatar{width:46px;height:46px;border-radius:16px;background:var(--city);color:#fff;display:grid;place-items:center}.tag{border-radius:999px;padding:7px 10px;font-size:11px;font-weight:900;background:var(--soft);color:var(--muted)}.tag.info{background:#eef2f5;color:#466a8f}.tag.survey{background:#edf6ef;color:#3f7d58}.tag.event{background:#fff5e4;color:#8d6e2f}.post h2{font-size:20px}.post p{color:var(--muted);font-size:14px;line-height:1.5}.survey{border-radius:20px;background:#fff;border:1px solid var(--line);padding:14px;display:grid;gap:10px}.option{display:grid;gap:6px}.otop{display:flex;justify-content:space-between;font-weight:800;font-size:13px}.bar{height:9px;border-radius:999px;background:var(--soft);overflow:hidden}.bar span{display:block;height:100%;background:var(--accent)}.hidden{display:none!important}
-@media(max-width:980px){.shell{padding:0 0 88px;max-width:430px}.header{border-radius:0;border-left:0;border-right:0;border-top:0;display:block}.brand{margin-bottom:18px}.grid2,.gridmap,.grid3{grid-template-columns:1fr;padding:0 14px}.panel,.card{border-radius:24px}.hide-mobile{display:none}.map{height:470px}.tip{left:32px;top:24px}.nav{width:100%;max-width:430px;border-left:0;border-right:0}.nav button{font-size:10px}}
+.map{position:relative;height:560px;background:#dfe5df;overflow:hidden;border-radius:0 0 30px 30px}.osm-frame{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.82) contrast(.96) brightness(1.03);transform:scale(1.02);transform-origin:center;pointer-events:none}.map::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(247,247,245,.18));pointer-events:none}.map-title{position:absolute;left:18px;top:18px;z-index:5;background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:18px;padding:12px 14px;box-shadow:0 10px 28px rgba(0,0,0,.12)}.map-title h3{font-size:15px;margin-bottom:3px}.map-title p{font-size:12px;color:var(--muted)}.map-attribution{position:absolute;left:18px;bottom:14px;z-index:5;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:10px;color:var(--muted)}.pin{position:absolute;min-width:46px;height:46px;border-radius:999px;background:var(--accent);color:#fff;display:flex;align-items:center;gap:6px;justify-content:center;box-shadow:0 14px 28px rgba(232,70,75,.32);border:3px solid #fff;z-index:6;padding:0 10px;transition:.16s ease;white-space:nowrap}.pin:hover,.pin.selected{transform:translateY(-3px) scale(1.04);background:var(--accent-dark)}.pin span{font-size:19px;line-height:1}.pin strong{font-size:11px;max-width:92px;overflow:hidden;text-overflow:ellipsis}.pin::after{content:"";position:absolute;left:50%;bottom:-9px;transform:translateX(-50%);width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #fff}.lp1{left:48%;top:77%}.lp2{left:56%;top:42%}.lp3{left:36%;top:66%}.lp4{left:61%;top:70%}.lp5{left:54%;top:38%}.lp6{left:50%;top:58%}.lp7{left:63%;top:79%}.lp8{left:48%;top:36%}.lp9{left:57%;top:52%}.lp10{left:69%;top:61%}.lp11{left:44%;top:48%}.map-area-label{position:absolute;z-index:4;background:rgba(47,58,69,.78);color:#fff;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:900;letter-spacing:.2px;box-shadow:0 8px 18px rgba(0,0,0,.14)}.ml-zentrum{left:44%;top:30%}.ml-sued{left:45%;top:88%}.ml-plagwitz{left:19%;top:61%}.ml-hbf{left:55%;top:13%}.tip{position:absolute;right:18px;top:18px;width:255px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:15px;box-shadow:0 18px 40px rgba(0,0,0,.16);z-index:7}.tip h3{font-size:16px}.tip p{font-size:12px;color:var(--muted);line-height:1.35;margin:6px 0 10px}.map-actions{display:flex;gap:8px;margin-top:10px}.map-actions button{padding:8px 10px;font-size:11px}.location-consent{position:absolute;inset:0;z-index:9;display:grid;place-items:center;background:rgba(29,29,31,.28);backdrop-filter:blur(3px);padding:20px}.location-card{width:min(100%,360px);background:#fff;border:1px solid var(--line);border-radius:26px;padding:22px;text-align:center;box-shadow:0 22px 56px rgba(0,0,0,.22)}.location-icon{width:62px;height:62px;border-radius:22px;background:#fff0f0;color:var(--accent-dark);display:grid;place-items:center;margin:0 auto 14px;font-size:28px}.location-card h3{font-size:20px;margin-bottom:8px}.location-card p{font-size:13px;color:var(--muted);line-height:1.45;margin-bottom:16px}.location-card .primary{width:100%;padding:13px 14px;border-radius:16px}.user-position{position:absolute;left:50%;top:50%;z-index:8;width:34px;height:34px;border-radius:50% 50% 50% 8px;background:var(--accent);border:3px solid #fff;box-shadow:0 12px 26px rgba(0,0,0,.24),0 0 0 9px rgba(255,90,95,.18);transform:translate(-50%,-88%) rotate(-45deg);display:grid;place-items:center}.user-position::before{content:"";width:11px;height:11px;border-radius:50%;background:#fff;transform:rotate(45deg)}.radar-list-item{border:1px solid var(--line);border-radius:22px;padding:14px;background:#fbfbfa;display:grid;gap:10px}.radar-list-item h3{font-size:15px}.radar-list-item p{font-size:13px;color:var(--muted);line-height:1.35}.store-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.store-icon{width:42px;height:42px;border-radius:15px;background:var(--soft);display:grid;place-items:center;font-size:21px}.events,.sidebody{padding:16px;display:grid;gap:12px}.event,.compact{border:1px solid var(--line);border-radius:22px;padding:14px;background:#fbfbfa;display:grid;gap:10px}.etop{display:flex;justify-content:space-between;gap:10px}.date{width:54px;height:54px;border-radius:18px;background:var(--text);color:white;display:grid;place-items:center;text-align:center;font-weight:900;line-height:1.05}.date small{display:block;font-size:10px;color:rgba(255,255,255,.78)}
+.city{padding:20px;display:grid;gap:16px}.citylogo{height:90px;border-radius:24px;background:linear-gradient(135deg,#222,var(--city));color:#fff;display:flex;align-items:center;gap:14px;padding:18px}.seal{width:50px;height:50px;border-radius:16px;background:rgba(255,255,255,.14);display:grid;place-items:center;font-size:24px}.cat{border:1px solid var(--line);background:#fbfbfa;border-radius:18px;padding:13px;display:flex;align-items:center;gap:10px}.cat.active{border-color:rgba(255,90,95,.35);background:#fff5f5}.catico{width:36px;height:36px;border-radius:12px;background:var(--soft);display:grid;place-items:center}.feed{padding:18px;display:grid;gap:14px}.post{border:1px solid var(--line);border-radius:26px;background:#fbfbfa;padding:18px;display:grid;gap:14px}.posttop{display:flex;justify-content:space-between;gap:14px}.author{display:flex;gap:12px;align-items:center}.avatar{width:46px;height:46px;border-radius:16px;background:var(--city);color:#fff;display:grid;place-items:center}.tag{border-radius:999px;padding:0 10px;min-height:26px;display:inline-flex;align-items:center;justify-content:center;line-height:1;font-size:11px;font-weight:900;background:var(--soft);color:var(--muted)}.tag.info{background:#eef2f5;color:#466a8f}.tag.survey{background:#edf6ef;color:#3f7d58}.tag.event{background:#fff5e4;color:#8d6e2f}.post h2{font-size:20px}.post p{color:var(--muted);font-size:14px;line-height:1.5}.survey{border-radius:20px;background:#fff;border:1px solid var(--line);padding:14px;display:grid;gap:10px}.option{display:grid;gap:6px}.otop{display:flex;justify-content:space-between;font-weight:800;font-size:13px}.bar{height:9px;border-radius:999px;background:var(--soft);overflow:hidden}.bar span{display:block;height:100%;background:var(--accent)}.hidden{display:none!important}
+
+.login-shell{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 20% 20%,rgba(255,90,95,.16),transparent 30%),radial-gradient(circle at 80% 70%,rgba(47,58,69,.12),transparent 30%),var(--bg)}.login-card{width:min(100%,430px);background:var(--card);border:1px solid var(--line);border-radius:34px;padding:30px;box-shadow:0 24px 60px rgba(0,0,0,.08)}.login-brand{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}.login-mark{width:58px;height:58px;border-radius:20px;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:24px;font-weight:900;box-shadow:0 12px 28px rgba(232,70,75,.25)}.login-card h1{font-size:28px;margin-bottom:8px}.login-card p{color:var(--muted);font-size:14px;line-height:1.45}.login-form{display:grid;gap:13px;margin-top:24px}.login-field{display:grid;gap:7px}.login-field label{font-size:13px;font-weight:800}.login-field input{width:100%;border:1px solid var(--line);background:#fbfbfa;border-radius:16px;padding:14px 15px;font-size:15px;outline:0}.login-field input:focus{border-color:rgba(255,90,95,.6);box-shadow:0 0 0 4px rgba(255,90,95,.1)}.login-submit{border:0;background:var(--accent);color:white;border-radius:16px;padding:14px 16px;font-weight:900;margin-top:4px}.login-error{border:1px solid rgba(255,90,95,.35);background:#fff0f0;color:var(--accent-dark);border-radius:16px;padding:12px 14px;font-size:13px;font-weight:800}
+
+.qr-page{display:grid;gap:18px;max-width:760px;margin:0 auto}.qr-main-panel{padding:34px}.qr-stage{min-height:430px;display:grid;place-items:center}.qr-large{width:min(68vw,360px);height:min(68vw,360px);border-radius:34px;background:linear-gradient(90deg,#111 18px,transparent 18px) 0 0/38px 38px,linear-gradient(#111 18px,transparent 18px) 0 0/38px 38px,#fff;border:20px solid #fff;box-shadow:0 22px 54px rgba(0,0,0,.12)}.qr-guide{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:20px}.qr-guide h3{font-size:18px;margin-bottom:8px}.qr-guide p{color:var(--muted);font-size:14px;line-height:1.55}.points-compact{display:flex;align-items:center;justify-content:space-between;gap:14px}.history-link{border:0;background:transparent;color:var(--accent-dark);font-weight:900;text-decoration:underline;text-underline-offset:4px;padding:8px}.modal{position:fixed;inset:0;z-index:30;background:rgba(29,29,31,.38);backdrop-filter:blur(4px);display:grid;place-items:center;padding:20px}.modal-card{width:min(100%,680px);max-height:84vh;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:30px;box-shadow:0 28px 80px rgba(0,0,0,.24);display:flex;flex-direction:column}.modal-head{padding:22px;border-bottom:1px solid var(--line);display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-shrink:0}.modal-head h2{font-size:22px;margin-bottom:5px}.modal-head p{color:var(--muted);font-size:13px;line-height:1.4}.modal-close{width:38px;height:38px;border:1px solid var(--line);background:var(--soft);border-radius:50%;font-size:24px;line-height:1}.history-tools{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:#fbfbfa;flex-shrink:0}.history-summary{font-size:13px;color:var(--muted);font-weight:800}.history-summary strong{color:var(--text)}.history-filters{display:flex;gap:8px;flex-wrap:wrap}.history-filters .chip{padding:8px 10px}.history-list{padding:16px;display:grid;gap:10px;overflow:auto;max-height:52vh}.history-row{border:1px solid var(--line);border-radius:20px;background:#fbfbfa;padding:14px;display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center}.history-row h4{font-size:15px;margin-bottom:4px}.history-row p{font-size:12px;color:var(--muted);line-height:1.35}.history-icon{width:42px;height:42px;border-radius:15px;display:grid;place-items:center;font-weight:900;font-size:22px}.history-row.gain .history-icon{background:#edf6ef;color:#2f8a4f}.history-row.loss .history-icon{background:#fff0f0;color:#d73b41}.history-points{font-size:14px;white-space:nowrap}.history-row.gain .history-points{color:#2f8a4f}.history-row.loss .history-points{color:#d73b41}.history-empty{display:none;padding:18px;margin:0 16px 16px;border:1px dashed var(--line);border-radius:18px;color:var(--muted);text-align:center;font-size:13px}.history-empty.visible{display:block}.deals-list{max-height:294px;overflow:auto;display:grid;gap:10px;padding-right:4px;scrollbar-width:thin}.deal-card{background:#fbfbfa;border:1px solid var(--line);border-radius:18px;padding:13px;display:grid;grid-template-columns:42px 1fr auto;gap:10px;align-items:start}.deal-ico{width:42px;height:42px;border-radius:14px;background:#fff0f0;color:var(--accent-dark);display:grid;place-items:center;font-size:20px}.deal-card h4{font-size:14px;margin-bottom:4px}.deal-card p{font-size:12px;color:var(--muted);line-height:1.35}.deal-info{font-size:12px;color:var(--text);font-weight:800;line-height:1.35;margin-bottom:5px}.deal-info span{color:var(--muted);font-weight:800}.deal-side{display:grid;gap:8px;justify-items:end}.deal-show{border:0;background:var(--accent);color:#fff;border-radius:999px;padding:8px 10px;font-size:11px;font-weight:900;white-space:nowrap}.deal-show:hover{background:var(--accent-dark)}.deal-chip{border-radius:999px;background:var(--soft);color:var(--muted);padding:6px 8px;font-size:10px;font-weight:900;white-space:nowrap}.deal-chip.food{background:#fff3e7;color:#a85b10}.deal-chip.culture{background:#eef2f5;color:#466a8f}.deal-chip.mobility{background:#edf6ef;color:#3f7d58}.deal-chip.social{background:#fff0f0;color:var(--accent-dark)}.deal-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.catalog-grid{display:grid;gap:10px;max-height:430px;overflow:auto;padding:16px;scrollbar-width:thin}.catalog-row{background:#fbfbfa;border:1px solid var(--line);border-radius:18px;padding:14px;display:grid;grid-template-columns:46px 1fr auto;gap:12px;align-items:start}.catalog-row h4{font-size:15px;margin-bottom:4px}.catalog-row p{font-size:12px;color:var(--muted);line-height:1.35}.catalog-row .deal-ico{width:46px;height:46px}.catalog-status{font-size:11px;font-weight:900;color:var(--accent-dark);background:#fff0f0;border-radius:999px;padding:6px 8px;white-space:nowrap}.catalog-empty{display:none;margin:0 16px 16px;border:1px dashed var(--line);background:#fbfbfa;border-radius:16px;padding:12px;color:var(--muted);font-size:13px;text-align:center}.catalog-empty.visible{display:block}.catalog-search{padding:0 16px 14px;background:#fbfbfa;border-bottom:1px solid var(--line)}.catalog-search input{width:100%;border:1px solid var(--line);background:#fff;border-radius:16px;padding:12px 14px;font-size:14px;outline:0}
+
+@media(max-width:980px){.shell{padding:0 0 88px;max-width:430px}.header{border-radius:0;border-left:0;border-right:0;border-top:0;display:block}.brand{margin-bottom:18px}.grid2,.gridmap,.grid3{grid-template-columns:1fr;padding:0 14px}.panel,.card{border-radius:24px}.hide-mobile{display:none}.map{height:520px}.tip{left:14px;right:14px;top:86px;width:auto}.map-title{left:14px;top:14px;right:14px}.map-area-label{display:none}.pin strong{display:none}.pin{min-width:44px;padding:0}.lp1{left:51%;top:78%}.lp2{left:57%;top:43%}.lp3{left:30%;top:66%}.lp4{left:62%;top:72%}.lp5{left:54%;top:39%}.lp6{left:52%;top:59%}.map-attribution{left:14px;bottom:12px}.nav{width:100%;max-width:430px;border-left:0;border-right:0}.nav button{font-size:10px;min-height:44px}}
+
+  
+@media(max-width:640px){.qr-main-panel{padding:18px}.qr-stage{min-height:330px}.qr-large{width:min(78vw,285px);height:min(78vw,285px);border-width:16px;background-size:32px 32px}.points-compact{align-items:flex-start;flex-direction:column}.history-row{grid-template-columns:38px 1fr;align-items:start}.history-points{grid-column:2}.modal{padding:12px}.modal-card{border-radius:24px}}
+
+
+/* Favoriten, Lesezeichen und Öffnungszeiten */
+.saved-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.saved-box{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:16px;display:grid;gap:10px}.saved-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.saved-head h3{font-size:16px}.saved-head a{font-size:12px;color:var(--accent-dark);font-weight:900;text-decoration:none}.saved-list{display:grid;gap:8px}.saved-item{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fbfbfa;border:1px solid var(--line);border-radius:16px;padding:10px 12px}.saved-item strong{font-size:13px}.saved-item p{font-size:12px;color:var(--muted);line-height:1.3}.saved-empty{font-size:13px;color:var(--muted);line-height:1.4;background:#fbfbfa;border:1px dashed var(--line);border-radius:16px;padding:12px}.favorite-btn,.bookmark-btn{width:38px;height:38px;border:1px solid var(--line);background:var(--soft);display:grid;place-items:center;font-size:18px;font-weight:900;color:var(--muted);transition:.15s ease;flex-shrink:0}.favorite-btn{border-radius:50%}.bookmark-btn{border-radius:14px;background:#f7f5ef}.favorite-btn:hover,.bookmark-btn:hover{transform:translateY(-1px);border-color:rgba(255,90,95,.35);color:var(--accent-dark)}.favorite-btn.active{background:#fff0f0;border-color:#ffd3d4;color:var(--accent-dark)}.bookmark-btn.active{background:#fff3cf;border-color:#ffb84d;box-shadow:0 0 0 4px rgba(255,184,77,.28),0 12px 24px rgba(0,0,0,.10);transform:translateY(-1px) scale(1.06)}.bookmark-icon{width:18px;height:22px;display:block;object-fit:contain;filter:grayscale(1) brightness(.12)}.bookmark-inline-icon{width:15px;height:18px;display:block;object-fit:contain;filter:grayscale(1) brightness(.12)}.bookmark-btn.active .bookmark-icon,.bookmark-chip-label .bookmark-inline-icon,.bookmark-title-label .bookmark-inline-icon{filter:none}.bookmark-chip-label,.bookmark-title-label{display:inline-flex;align-items:center;gap:7px}.shop-actions{display:grid;gap:8px;justify-items:end}.shop .favorite-btn{width:34px;height:34px;font-size:16px}.store-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.store-actions .favorite-btn{width:36px;height:36px;font-size:17px}.post-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.post-actions-left{display:flex;gap:8px;flex-wrap:wrap}.posttop .bookmark-btn{margin-left:auto}.hours-line{font-size:12px;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap}.status{display:inline-flex;align-items:center;gap:5px;border-radius:999px;padding:5px 8px;font-size:11px;font-weight:900}.status::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}.status.open{background:#edf6ef;color:#2f8a4f}.status.closed{background:#f0f0ee;color:#747478}.status.soon{background:#fff5e4;color:#9a6b14}.store-detail{display:grid;gap:8px}.favorites-count,.bookmarks-count{font-size:11px;color:var(--muted);font-weight:900}.pin.favorite{box-shadow:0 14px 28px rgba(232,70,75,.32),0 0 0 5px rgba(255,90,95,.18)}
+@media(max-width:980px){.saved-grid{grid-template-columns:1fr}.announcement-grid{grid-template-columns:1fr;padding:0 14px}.shop{grid-template-columns:52px 1fr auto}.deal-card,.catalog-row{grid-template-columns:42px 1fr}.deal-chip,.catalog-status,.deal-side{grid-column:2;justify-self:start}.shop-actions{align-self:start}}
 
   </style>
 </head>
@@ -22,38 +35,425 @@
 
   <script>
 
-const shops = [
-  ["Café Südplatz","☕","Kaffee, Frühstück und Kuchen in Leipzig",["2x Punkte heute","0,4 km"],340,"café südplatz gastronomie kaffee"],
-  ["Bäckerei Krone","🥐","Regionale Backwaren und Snacks",["Coupon aktiv","0,8 km"],190,"bäckerei krone lebensmittel bäcker"],
-  ["Flora Werkstatt","🌿","Blumen, Pflanzen und Geschenkideen",["Neu dabei","1,1 km"],85,"flora werkstatt einzelhandel blumen"],
-  ["Bar Acht","🍸","Drinks, Events und Wochenaktionen",["9 kaufen, 1 gratis","1,6 km"],520,"bar acht nachtleben drinks"],
-  ["Kino Passage","🎬","Kultur, Filmabende und lokale Events",["Prämien verfügbar","2,2 km"],145,"kino passage kultur freizeit"]
-];
 
 const mapData = {
-  "Museum am Markt":["Museum am Markt","Sonderausstellung heute. Gratis Eintritt ab 1.000 DISAP Punkten.","100 Punkte","0,7 km","Museum"],
-  "Kino Passage":["Kino Passage","Heute 20:15 Uhr. Sammle beim Ticketkauf 80 DISAP Punkte.","80 Punkte","1,2 km","Kultur"],
-  "Galerie West":["Galerie West","Galerie Abend ab 18:00 Uhr. 2x Punkte auf Getränke.","2x Punkte","2,0 km","Galerie"],
-  "Theater Loft":["Theater Loft","Open Stage mit aktivem Studierenden Coupon.","Coupon","1,8 km","Theater"],
-  "Club Kulturhof":["Club Kulturhof","Live Session am Abend. Punkte sammeln am Einlass.","Punkte","2,4 km","Musik"],
-  "Stadtbibliothek":["Stadtbibliothek","Lesung und Kulturprogramm mit DISAP Vorteil.","40 Punkte","0,9 km","Lesung"]
+  "Café Südplatz": {
+    name: "Café Südplatz",
+    icon: "☕",
+    desc: "Teilnehmendes Café im Bereich Südplatz mit Kaffee, Frühstück und Tagesaktionen.",
+    benefit: "2x Punkte heute",
+    distance: "0,4 km",
+    category: "Gastronomie",
+    pin: "lp1",
+    hoursText: "08:00–18:00 Uhr",
+    open: "08:00",
+    close: "18:00",
+    search: "cafe café südplatz gastronomie kaffee südvorstadt karl liebknecht strasse"
+  },
+  "Kino Passage": {
+    name: "Kino Passage",
+    icon: "🎬",
+    desc: "Kulturpartner im Zentrum. Punkte beim Ticketkauf und wechselnde Filmaktionen.",
+    benefit: "80 Punkte",
+    distance: "1,2 km",
+    category: "Kultur",
+    pin: "lp2",
+    hoursText: "14:00–23:30 Uhr",
+    open: "14:00",
+    close: "23:30",
+    search: "kino passage kultur film zentrum innenstadt"
+  },
+  "Flora Werkstatt": {
+    name: "Flora Werkstatt",
+    icon: "🌿",
+    desc: "Lokaler Blumenladen im Leipziger Westen mit Aktionen für DISAP Nutzer.",
+    benefit: "Neu dabei",
+    distance: "1,8 km",
+    category: "Einzelhandel",
+    pin: "lp3",
+    hoursText: "10:00–18:00 Uhr",
+    open: "10:00",
+    close: "18:00",
+    search: "flora werkstatt einzelhandel blumen plagwitz westen"
+  },
+  "Bar Acht": {
+    name: "Bar Acht",
+    icon: "🍸",
+    desc: "Teilnehmende Bar im KarLi Umfeld mit Abendaktionen und Bonuspunkten.",
+    benefit: "9 kaufen, 1 gratis",
+    distance: "0,9 km",
+    category: "Gastronomie",
+    pin: "lp4",
+    hoursText: "18:00–01:00 Uhr",
+    open: "18:00",
+    close: "01:00",
+    search: "bar acht gastronomie drinks karl liebknecht strasse südvorstadt"
+  },
+  "Bäckerei Krone": {
+    name: "Bäckerei Krone",
+    icon: "🥐",
+    desc: "Bäckerei in der Innenstadt mit Coupon und Punkten auf Snacks und Backwaren.",
+    benefit: "Coupon aktiv",
+    distance: "0,8 km",
+    category: "Lebensmittel",
+    pin: "lp5",
+    hoursText: "06:30–18:00 Uhr",
+    open: "06:30",
+    close: "18:00",
+    search: "bäckerei krone lebensmittel backwaren innenstadt markt"
+  },
+  "Stadtbibliothek": {
+    name: "Stadtbibliothek",
+    icon: "📚",
+    desc: "Städtisches Kulturangebot mit Lesungen und DISAP Vorteilen.",
+    benefit: "40 Punkte",
+    distance: "0,9 km",
+    category: "Kultur",
+    pin: "lp6",
+    hoursText: "10:00–19:00 Uhr",
+    open: "10:00",
+    close: "19:00",
+    search: "stadtbibliothek kultur lesung wilhelm leuschner platz"
+  },
+  "Pizzeria Napoli": {
+    name: "Pizzeria Napoli",
+    icon: "🍕",
+    desc: "Teilnehmendes Restaurant mit Pizzaaktionen und DISAP Rabatt Coupons.",
+    benefit: "30% Rabatt",
+    distance: "1,4 km",
+    category: "Gastronomie",
+    pin: "lp7",
+    hoursText: "11:30–22:30 Uhr",
+    open: "11:30",
+    close: "22:30",
+    search: "pizzeria napoli gastronomie pizza essen rabatt coupon südvorstadt"
+  },
+  "Museum am Markt": {
+    name: "Museum am Markt",
+    icon: "🏛",
+    desc: "Kulturpartner mit Ausstellungen und einlösbaren Punkte Prämien.",
+    benefit: "Eintritt gratis",
+    distance: "0,7 km",
+    category: "Kultur",
+    pin: "lp8",
+    hoursText: "10:00–18:00 Uhr",
+    open: "10:00",
+    close: "18:00",
+    search: "museum am markt kultur ausstellung kostenloser eintritt innenstadt"
+  },
+  "Stadt Leipzig Mobilität": {
+    name: "Stadt Leipzig Mobilität",
+    icon: "🚋",
+    desc: "Mobilitätspartner für einlösbare ÖPNV Vorteile im DISAP Programm.",
+    benefit: "Fahrt gratis",
+    distance: "0,5 km",
+    category: "Mobilität",
+    pin: "lp9",
+    hoursText: "06:00–23:00 Uhr",
+    open: "06:00",
+    close: "23:00",
+    search: "stadt leipzig mobilität öffis öpnv ticket tram bus"
+  },
+  "Theater Loft": {
+    name: "Theater Loft",
+    icon: "🎭",
+    desc: "Kulturpartner mit Theaterabenden, 2 für 1 Aktionen und DISAP Vorteilen.",
+    benefit: "2 für 1",
+    distance: "1,8 km",
+    category: "Kultur",
+    pin: "lp10",
+    hoursText: "16:00–22:30 Uhr",
+    open: "16:00",
+    close: "22:30",
+    search: "theater loft kultur theater 2 für 1 vorstellung"
+  },
+  "Bistro Mitte": {
+    name: "Bistro Mitte",
+    icon: "🥗",
+    desc: "Teilnehmendes Bistro mit Mittagsaktionen und Rabatt Coupons.",
+    benefit: "20% Mittag",
+    distance: "0,9 km",
+    category: "Gastronomie",
+    pin: "lp11",
+    hoursText: "09:00–20:00 Uhr",
+    open: "09:00",
+    close: "20:00",
+    search: "bistro mitte gastronomie essen mittagsmenü rabatt"
+  }
 };
+
+const BOOKMARK_ICON = "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%3Cpath%20fill%3D%22%23ff5a5f%22%20d%3D%22M7%203.25h10A2.25%202.25%200%200%201%2019.25%205.5v15.1a.9.9%200%200%201-1.37.77L12%2017.8l-5.88%203.57a.9.9%200%200%201-1.37-.77V5.5A2.25%202.25%200%200%201%207%203.25Z%22/%3E%0A%20%20%3Cpath%20fill%3D%22%23ffffff%22%20opacity%3D%22.28%22%20d%3D%22M7%203.25h10A2.25%202.25%200%200%201%2019.25%205.5v1.1H4.75V5.5A2.25%202.25%200%200%201%207%203.25Z%22/%3E%0A%3C/svg%3E";
+
+const announcementData = [
+  {
+    id: "mobilitaetszone",
+    type: "info",
+    tag: "Information",
+    tagClass: "info",
+    meta: "Heute · Offizielle Information",
+    title: "Neue Mobilitätszone in der Innenstadt",
+    text: "Ab nächster Woche wird in Teilen der Innenstadt eine neue Verkehrsführung getestet. Fußwege, Radwege und Lieferzonen sollen dadurch übersichtlicher werden.",
+    search: "innenstadt mobilität baustelle information verkehrsführung",
+    pills: ["Innenstadt", "Mobilität", "Gültig ab Montag"],
+    buttons: ["Details ansehen", "Merken"]
+  },
+  {
+    id: "marktzeiten",
+    type: "info",
+    tag: "Information",
+    tagClass: "info",
+    meta: "Heute · Service Hinweis",
+    title: "Geänderte Öffnungszeiten auf dem Wochenmarkt",
+    text: "Auf dem Wochenmarkt am Augustusplatz gelten in dieser Woche verlängerte Öffnungszeiten. Mehrere DISAP Partner nehmen an der Aktion teil.",
+    search: "wochenmarkt augustusplatz öffnungszeiten service partner",
+    pills: ["Wochenmarkt", "Augustusplatz", "Diese Woche"],
+    buttons: ["Details ansehen", "Merken"]
+  },
+  {
+    id: "brueckenarbeiten",
+    type: "info",
+    tag: "Information",
+    tagClass: "info",
+    meta: "Vor 1 Tag · Verkehrsinformation",
+    title: "Brückenarbeiten am Innenstadtring",
+    text: "Wegen Bauarbeiten kommt es am Innenstadtring zu temporären Sperrungen. Teilnehmende Partner in der Umgebung bleiben weiterhin erreichbar.",
+    search: "brückenarbeiten innenstadtring sperrung verkehr partner erreichbar",
+    pills: ["Verkehr", "Innenstadtring", "Baustelle"],
+    buttons: ["Details ansehen", "Merken"]
+  },
+  {
+    id: "kulturumfrage",
+    type: "survey",
+    tag: "Umfrage",
+    tagClass: "survey",
+    meta: "Gestern · Bürgerumfrage",
+    title: "Welche Kulturangebote wünscht du dir häufiger?",
+    text: "Die Stadt Leipzig möchte lokale Kulturangebote besser auf die Interessen der Bürgerinnen und Bürger abstimmen.",
+    search: "umfrage innenstadt kultur angebot befragung open air kino konzerte stadtteilfeste",
+    survey: [["Open Air Kino",42],["Konzerte im Park",35],["Stadtteilfeste",23]],
+    buttons: ["Abstimmen", "Teilen"]
+  },
+  {
+    id: "fahrradumfrage",
+    type: "survey",
+    tag: "Umfrage",
+    tagClass: "survey",
+    meta: "Vor 2 Tagen · Bürgerumfrage",
+    title: "Wo fehlen dir sichere Fahrradabstellplätze?",
+    text: "Die Stadt sammelt Rückmeldungen für zusätzliche Fahrradabstellflächen in Innenstadt, Südvorstadt und Plagwitz.",
+    search: "umfrage fahrrad abstellplätze innenstadt südvorstadt plagwitz mobilität",
+    survey: [["Innenstadt",38],["Südvorstadt",34],["Plagwitz",28]],
+    buttons: ["Abstimmen", "Teilen"]
+  },
+  {
+    id: "familienangebote",
+    type: "survey",
+    tag: "Umfrage",
+    tagClass: "survey",
+    meta: "Vor 4 Tagen · Bürgerumfrage",
+    title: "Welche Familienangebote sollen ausgebaut werden?",
+    text: "Leipzig plant neue Freizeit und Kulturangebote für Familien und fragt nach den wichtigsten Schwerpunkten.",
+    search: "umfrage familienangebote freizeit kultur spielplätze veranstaltungen",
+    survey: [["Familienfeste",31],["Ferienprogramme",46],["Kinderkultur",23]],
+    buttons: ["Abstimmen", "Teilen"]
+  },
+  {
+    id: "stadtteilfest",
+    type: "event",
+    tag: "Event",
+    tagClass: "event",
+    meta: "Vor 2 Tagen · Veranstaltung",
+    title: "Stadtteilfest am Wochenende",
+    text: "Lokale Händler, Gastronomie, Musik und Kulturangebote nehmen am kommenden Wochenende am Stadtteilfest teil. DISAP Partner bieten zusätzliche Punkteaktionen an.",
+    search: "event stadtfest leipzig wochenende markt musik stadtteilfest",
+    eventCard: { title: "Leipziger Stadtteilfest", text: "Samstag · 12:00 bis 22:00 Uhr · Zentrum Süd", day: "15", month: "JUN" },
+    buttons: ["Event anzeigen", "Zum Kalender"]
+  },
+  {
+    id: "sommerkino",
+    type: "event",
+    tag: "Event",
+    tagClass: "event",
+    meta: "Vor 3 Tagen · Veranstaltung",
+    title: "Sommerkino im Clara Zetkin Park",
+    text: "Ein Open Air Filmabend mit gastronomischen Angeboten und zusätzlichen DISAP Punkten bei ausgewählten Partnern.",
+    search: "event sommerkino clara zetkin park open air film gastronomische angebote",
+    eventCard: { title: "Sommerkino Leipzig", text: "Freitag · 21:30 Uhr · Clara Zetkin Park", day: "19", month: "JUN" },
+    buttons: ["Event anzeigen", "Zum Kalender"]
+  },
+  {
+    id: "shoppingabend",
+    type: "event",
+    tag: "Event",
+    tagClass: "event",
+    meta: "Vor 5 Tagen · Veranstaltung",
+    title: "Langer Einkaufsabend in Plagwitz",
+    text: "Mehrere teilnehmende Läden öffnen länger und bieten am Abend besondere Aktionen für DISAP Nutzerinnen und Nutzer an.",
+    search: "event shoppingabend plagwitz einkaufen läden aktionen disap",
+    eventCard: { title: "Shoppingabend Plagwitz", text: "Donnerstag · 18:00 bis 22:00 Uhr · Karl Heine Straße", day: "20", month: "JUN" },
+    buttons: ["Event anzeigen", "Zum Kalender"]
+  }
+];
+
+function getStores() {
+  return Object.values(mapData);
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[char]));
+}
+
+function initialsFromName(value) {
+  const cleaned = String(value || "").trim();
+  return cleaned ? cleaned.slice(0, 2).toUpperCase() : "DU";
+}
+
+function getStoredSet(key) {
+  try {
+    return new Set(JSON.parse(localStorage.getItem(key) || "[]"));
+  } catch (error) {
+    return new Set();
+  }
+}
+
+function saveStoredSet(key, set) {
+  localStorage.setItem(key, JSON.stringify([...set]));
+}
+
+function isFavoriteStore(name) {
+  return getStoredSet("disapFavoriteStores").has(name);
+}
+
+function toggleFavoriteStore(name) {
+  const favorites = getStoredSet("disapFavoriteStores");
+  favorites.has(name) ? favorites.delete(name) : favorites.add(name);
+  saveStoredSet("disapFavoriteStores", favorites);
+  return favorites.has(name);
+}
+
+function isBookmarkedPost(id) {
+  return getStoredSet("disapBookmarkedPosts").has(id);
+}
+
+function toggleBookmarkedPost(id) {
+  const bookmarks = getStoredSet("disapBookmarkedPosts");
+  bookmarks.has(id) ? bookmarks.delete(id) : bookmarks.add(id);
+  saveStoredSet("disapBookmarkedPosts", bookmarks);
+  return bookmarks.has(id);
+}
+
+function parseTimeToMinutes(value) {
+  const [hours, minutes] = String(value).split(":").map(Number);
+  return (hours * 60) + (minutes || 0);
+}
+
+function getStoreStatus(store) {
+  const now = new Date();
+  let current = now.getHours() * 60 + now.getMinutes();
+  let open = parseTimeToMinutes(store.open);
+  let close = parseTimeToMinutes(store.close);
+  if (close <= open) {
+    close += 1440;
+    if (current < open) current += 1440;
+  }
+  const isOpen = current >= open && current < close;
+  if (!isOpen) return { text: "Geschlossen", className: "closed" };
+  const minutesToClose = close - current;
+  if (minutesToClose <= 60) return { text: "Schließt demnächst", className: "soon" };
+  return { text: "Geöffnet", className: "open" };
+}
+
+function favoriteButtonMarkup(name, compact=false) {
+  const active = isFavoriteStore(name);
+  return `<button class="favorite-btn ${active ? "active" : ""}" data-toggle-favorite="${escapeHtml(name)}" aria-label="${active ? "Aus Favoriten entfernen" : "Zu Favoriten hinzufügen"}" title="Favorit">${active ? "♥" : "♡"}</button>`;
+}
+
+function bookmarkIconMarkup(className = "bookmark-inline-icon") {
+  return `<img src="${BOOKMARK_ICON}" class="${className}" alt="">`;
+}
+
+function bookmarkButtonMarkup(id) {
+  const active = isBookmarkedPost(id);
+  return `<button class="bookmark-btn ${active ? "active" : ""}" data-toggle-bookmark="${escapeHtml(id)}" aria-label="${active ? "Lesezeichen entfernen" : "Als Lesezeichen markieren"}" title="Lesezeichen">${bookmarkIconMarkup("bookmark-icon")}</button>`;
+}
+
+function renderFavoriteDashboardList() {
+  const favorites = getStoredSet("disapFavoriteStores");
+  const stores = getStores().filter(store => favorites.has(store.name));
+  if (!stores.length) return `<div class="saved-empty">Noch keine Lieblingsläden markiert. Nutze das Herz Symbol auf dem Dashboard oder im Radar.</div>`;
+  return stores.map(store => `<div class="saved-item"><div><strong>${store.icon} ${escapeHtml(store.name)}</strong><p>${escapeHtml(store.category)} · ${escapeHtml(store.distance)}</p></div>${favoriteButtonMarkup(store.name, true)}</div>`).join("");
+}
+
+function renderBookmarkDashboardList() {
+  const bookmarks = getStoredSet("disapBookmarkedPosts");
+  const posts = announcementData.filter(post => bookmarks.has(post.id));
+  if (!posts.length) return `<div class="saved-empty">Noch keine Ankündigungen als Lesezeichen gespeichert. Nutze das Lesezeichen Symbol im Ankündigung Tab.</div>`;
+  return posts.map(post => `<div class="saved-item"><div><strong class="bookmark-title-label">${bookmarkIconMarkup("bookmark-inline-icon")}<span>${escapeHtml(post.title)}</span></strong><p>${escapeHtml(post.tag)} · Stadt Leipzig</p></div></div>`).join("");
+}
+
+function updateFavoriteButtons(name) {
+  const active = isFavoriteStore(name);
+  document.querySelectorAll(`[data-toggle-favorite="${CSS.escape(name)}"]`).forEach(btn => {
+    btn.classList.toggle("active", active);
+    btn.textContent = active ? "♥" : "♡";
+    btn.setAttribute("aria-label", active ? "Aus Favoriten entfernen" : "Zu Favoriten hinzufügen");
+  });
+  document.querySelectorAll(`.pin[data-title="${CSS.escape(name)}"]`).forEach(pin => pin.classList.toggle("favorite", active));
+  const favoriteList = document.getElementById("dashboardFavorites");
+  if (favoriteList) favoriteList.innerHTML = renderFavoriteDashboardList();
+}
+
+function updateBookmarkButtons(id) {
+  const active = isBookmarkedPost(id);
+  document.querySelectorAll(`[data-toggle-bookmark="${CSS.escape(id)}"]`).forEach(btn => {
+    btn.classList.toggle("active", active);
+    btn.setAttribute("aria-label", active ? "Lesezeichen entfernen" : "Als Lesezeichen markieren");
+  });
+  const bookmarkList = document.getElementById("dashboardBookmarks");
+  if (bookmarkList) bookmarkList.innerHTML = renderBookmarkDashboardList();
+}
+
+function bindFavoriteButtons(extraUpdate) {
+  document.querySelectorAll("[data-toggle-favorite]").forEach(btn => btn.addEventListener("click", event => {
+    event.stopPropagation();
+    const name = btn.dataset.toggleFavorite;
+    toggleFavoriteStore(name);
+    updateFavoriteButtons(name);
+    if (typeof extraUpdate === "function") extraUpdate();
+  }));
+}
+
+function bindBookmarkButtons(extraUpdate) {
+  document.querySelectorAll("[data-toggle-bookmark]").forEach(btn => btn.addEventListener("click", event => {
+    event.stopPropagation();
+    const id = btn.dataset.toggleBookmark;
+    toggleBookmarkedPost(id);
+    updateBookmarkButtons(id);
+    if (typeof extraUpdate === "function") extraUpdate();
+  }));
+}
 
 class DemoApp {
   constructor(root) {
     this.root = root;
+    this.isLoggedIn = sessionStorage.getItem("disapLoggedIn") === "true";
+    this.username = sessionStorage.getItem("disapUsername") || "Admin";
     this.view = location.hash.replace("#","") || "home";
     this.nav = [
       ["home","⌂","Start"],
       ["radar","⌖","Radar"],
-      ["announcements","📢","Ankünd."],
       ["qr","▣","QR"],
+      ["announcements","📢","Ankünd."],
       ["profile","◌","Profil"]
     ];
   }
 
   init() {
     window.addEventListener("hashchange", () => {
+      if (!this.isLoggedIn) {
+        this.render();
+        return;
+      }
       this.view = location.hash.replace("#","") || "home";
       this.render();
     });
@@ -61,6 +461,12 @@ class DemoApp {
   }
 
   render() {
+    if (!this.isLoggedIn) {
+      this.root.innerHTML = new LoginView().render();
+      this.bind();
+      return;
+    }
+
     this.root.innerHTML = `
       <main class="shell">
         ${this.header()}
@@ -72,11 +478,12 @@ class DemoApp {
   }
 
   header() {
+    const username = escapeHtml(this.username);
     const copy = {
-      home:["Hallo, Niklas 👋","Entdecke teilnehmende Shops in deiner Nähe und behalte deine Punkte im Blick."],
+      home:[`Hallo, ${username} 👋`,"Entdecke teilnehmende Shops in deiner Nähe und behalte deine Punkte im Blick."],
       radar:["Aktionsradar","Finde kulturelle Angebote in deiner Nähe, sammle Punkte und entdecke aktuelle Events teilnehmender DISAP Partner."],
       announcements:["Ankündigungen","Offizielle Informationen, Umfragen und Events der Stadt Leipzig direkt in der DISAP App."],
-      qr:["Dein QR Code","Zeige deinen persönlichen DISAP Code zum Sammeln, Einlösen und später auch zum Bezahlen."],
+      qr:[`Hier ist dein persönlicher QR-Code, ${username}!`, ""],
       profile:["Profil","Verwalte dein Benutzerkonto, deine Einstellungen und deine bevorzugten DISAP Funktionen."]
     };
     const [title,text] = copy[this.view] || copy.home;
@@ -87,51 +494,127 @@ class DemoApp {
             <div class="logo">DISAP</div>
             <div class="sub">Der digitale Sammelpass</div>
           </div>
-          <div class="profile">NR</div>
         </div>
-        <div class="headtext"><h1>${title}</h1><p>${text}</p></div>
+        <div class="headtext"><h1>${title}</h1>${text ? `<p>${text}</p>` : ""}</div>
       </header>
     `;
   }
 
   navigation() {
-    return `<nav class="nav">${this.nav.map(([id,icon,label]) => `
+    const initials = escapeHtml(initialsFromName(this.username));
+    return `<nav class="nav">${this.nav.map(([id,icon,label]) => {
+      const renderedIcon = id === "profile"
+        ? `<span class="nav-usericon">${initials}</span>`
+        : `<span class="nav-icon ${id === "radar" ? "radar-icon" : ""}">${icon}</span>`;
+      return `
       <button class="${this.view===id ? "active" : ""}" data-view="${id}">
-        <span>${icon}</span>${label}
-      </button>`).join("")}</nav>`;
+        ${renderedIcon}${label}
+      </button>`;
+    }).join("")}</nav>`;
   }
 
   page() {
     if (this.view === "radar") return new RadarView().render();
     if (this.view === "announcements") return new AnnouncementsView().render();
-    if (this.view === "qr") return new QRView().render();
-    if (this.view === "profile") return new ProfileView().render();
+    if (this.view === "qr") return new QRView(this.username).render();
+    if (this.view === "profile") return new ProfileView(this.username).render();
     return new HomeView().render();
   }
 
   bind() {
+    if (!this.isLoggedIn) {
+      LoginView.bind((username, password) => {
+        const validUsername = Boolean(username) && !/\s/.test(username);
+        if (validUsername && password === "Admin") {
+          sessionStorage.setItem("disapLoggedIn", "true");
+          sessionStorage.setItem("disapUsername", username);
+          this.username = username;
+          this.isLoggedIn = true;
+          this.view = "home";
+          location.hash = "home";
+          this.render();
+        } else {
+          LoginView.showError();
+        }
+      });
+      return;
+    }
+
     document.querySelectorAll(".nav button").forEach(btn => btn.addEventListener("click", () => location.hash = btn.dataset.view));
     if (this.view === "home") HomeView.bind();
     if (this.view === "radar") RadarView.bind();
     if (this.view === "announcements") AnnouncementsView.bind();
+    if (this.view === "profile") ProfileView.bind();
+  }
+}
+
+class LoginView {
+  render() {
+    return `<main class="login-shell">
+      <section class="login-card">
+        <div class="login-brand">
+          <div>
+            <div class="logo">DISAP</div>
+            <div class="sub">Der digitale Sammelpass</div>
+          </div>
+          <div class="login-mark">D</div>
+        </div>
+        <h1>Anmelden</h1>
+        <p>Bitte melde dich an, um das DISAP Dashboard zu öffnen.</p>
+        <form class="login-form" id="loginForm" novalidate>
+          <div class="login-field">
+            <label for="username">Nutzername</label>
+            <input id="username" name="username" type="text" autocomplete="username" placeholder="Nutzername eingeben">
+          </div>
+          <div class="login-field">
+            <label for="password">Passwort</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Passwort eingeben">
+          </div>
+          <div class="login-error hidden" id="loginError">Anmeldung fehlgeschlagen. Bitte Nutzernamen prüfen und das richtige Passwort eingeben.</div>
+          <button class="login-submit" type="submit">Einloggen</button>
+        </form>
+      </section>
+    </main>`;
+  }
+
+  static bind(onSubmit) {
+    const form = document.getElementById("loginForm");
+    const error = document.getElementById("loginError");
+    form?.addEventListener("submit", event => {
+      event.preventDefault();
+      error?.classList.add("hidden");
+      const username = document.getElementById("username")?.value.trim();
+      const password = document.getElementById("password")?.value || "";
+      onSubmit(username, password);
+    });
+  }
+
+  static showError() {
+    const error = document.getElementById("loginError");
+    error?.classList.remove("hidden");
   }
 }
 
 class HomeView {
-  renderShop(shop) {
-    const [name,icon,desc,tags,points,search] = shop;
-    return `<article class="shop" data-search="${search}">
-      <div class="ico">${icon}</div>
+  renderShop(store) {
+    const status = getStoreStatus(store);
+    return `<article class="shop" data-search="${store.search}">
+      <div class="ico">${store.icon}</div>
       <div>
-        <h3>${name}</h3>
-        <p>${desc}</p>
-        <div class="meta">${tags.map((t,i)=>`<span class="pill ${i===0?"a":""}">${t}</span>`).join("")}</div>
+        <h3>${escapeHtml(store.name)}</h3>
+        <p>${escapeHtml(store.desc)}</p>
+        <div class="meta"><span class="pill a">${escapeHtml(store.benefit)}</span><span class="pill">${escapeHtml(store.distance)}</span><span class="pill">${escapeHtml(store.category)}</span></div>
+        <div class="hours-line"><span>${escapeHtml(store.hoursText)}</span><span class="status ${status.className}">${status.text}</span></div>
       </div>
-      <div class="sp">${points}<small>Punkte</small></div>
+      <div class="shop-actions">
+        <div class="sp">${store.name === "Café Südplatz" ? 340 : store.name === "Bäckerei Krone" ? 190 : store.name === "Flora Werkstatt" ? 85 : store.name === "Bar Acht" ? 520 : store.name === "Kino Passage" ? 145 : 40}<small>Punkte</small></div>
+        ${favoriteButtonMarkup(store.name, true)}
+      </div>
     </article>`;
   }
 
   render() {
+    const stores = getStores();
     return `<div class="grid2">
       <div>
         <section class="section">
@@ -141,14 +624,24 @@ class HomeView {
             <p>Noch 220 Punkte bis zur nächsten Prämie.</p>
             <div class="progress"><span></span></div>
           </div>
-          <div class="quick"><button data-qr>QR zeigen</button><button>Coupons</button><button>Historie</button></div>
+          <div class="quick"><button data-qr>QR zeigen</button><button data-open-catalog>Coupons</button><button data-open-history>Historie</button></div>
+          <div class="saved-grid">
+            <div class="saved-box">
+              <div class="saved-head"><h3>♥ Favoriten</h3><a href="#radar">Radar öffnen</a></div>
+              <div class="saved-list" id="dashboardFavorites">${renderFavoriteDashboardList()}</div>
+            </div>
+            <div class="saved-box">
+              <div class="saved-head"><h3 class="bookmark-title-label">${bookmarkIconMarkup("bookmark-inline-icon")}<span>Lesezeichen</span></h3><a href="#announcements">Ankündigungen öffnen</a></div>
+              <div class="saved-list" id="dashboardBookmarks">${renderBookmarkDashboardList()}</div>
+            </div>
+          </div>
         </section>
         <section class="section">
-          <div class="row"><h2>Dein QR-Code</h2></div>
-          <div class="scan"><div><h3>Beim Einkauf scannen lassen</h3><p>Nutze deinen persönlichen Code zum Sammeln, Einlösen und später auch zum Bezahlen.</p></div><div class="qr"></div></div>
+          <div class="row"><h2>Einlösbare Rabatte</h2><a href="#profile" data-open-catalog>Katalog öffnen</a></div>
+          <div class="deals-list">${renderDashboardDeals()}</div>
         </section>
         <section class="section">
-          <div class="row"><h2>Aktueller Vorteil</h2></div>
+          <div class="row"><h2>Empfohlener Vorteil</h2></div>
           <div class="coupon"><div><h3>Gratis Kaffee</h3><p>Einlösbar ab 1.500 Punkten bei teilnehmenden Cafés.</p></div><button class="primary">Einlösen</button></div>
         </section>
       </div>
@@ -156,10 +649,11 @@ class HomeView {
         <section class="section">
           <div class="row"><h2>Teilnehmende Shops</h2><a href="#radar">Aktionsradar öffnen</a></div>
           <div class="search"><input id="shopSearch" placeholder="Shop, Branche oder Ort suchen"><button>Suchen</button></div>
-          <div class="shops" id="shopList">${shops.map(this.renderShop).join("")}</div>
+          <div class="shops" id="shopList">${stores.map(store => this.renderShop(store)).join("")}</div>
         </section>
       </div>
-    </div>`;
+    </div>
+    ${historyModalMarkup()}`;
   }
 
   static bind() {
@@ -173,113 +667,563 @@ class HomeView {
     };
     input?.addEventListener("input", filter);
     document.querySelector("[data-qr]")?.addEventListener("click", () => location.hash = "qr");
+    document.querySelectorAll("[data-open-catalog]").forEach(btn => btn.addEventListener("click", event => {
+      event.preventDefault();
+      openCatalogOnProfile();
+    }));
+    document.querySelectorAll("[data-show-deal-partner]").forEach(btn => btn.addEventListener("click", event => {
+      event.preventDefault();
+      showPartnerOnRadar(btn.dataset.showDealPartner);
+    }));
+    bindFavoriteButtons();
+    ProfileView.bind();
   }
 }
 
 class RadarView {
-  renderEvent(d,m,t,p) {
-    return `<article class="event"><div class="etop"><div><h3>${t}</h3><p>${p}</p></div><div class="date">${d}<small>${m}</small></div></div><div><button class="primary">Anzeigen</button> <button class="secondary">Merken</button></div></article>`;
+  renderStore(store) {
+    const status = getStoreStatus(store);
+    return `<article class="radar-list-item" data-title="${store.name}" data-category="${store.category.toLowerCase()}" data-search="${store.search}">
+      <div class="store-top">
+        <div>
+          <h3>${escapeHtml(store.name)}</h3>
+          <p>${escapeHtml(store.desc)}</p>
+        </div>
+        <div class="store-icon">${store.icon}</div>
+      </div>
+      <div class="meta"><span class="pill a">${escapeHtml(store.benefit)}</span><span class="pill">${escapeHtml(store.distance)}</span><span class="pill">${escapeHtml(store.category)}</span></div>
+      <div class="hours-line"><span>Öffnungszeiten: ${escapeHtml(store.hoursText)}</span><span class="status ${status.className}">${status.text}</span></div>
+      <div class="store-actions"><button class="primary" data-show-store="${store.name}">Auf Karte zeigen</button><button class="secondary">Route</button>${favoriteButtonMarkup(store.name, true)}</div>
+    </article>`;
   }
 
   render() {
-    const pins = Object.keys(mapData).map((title,i)=>`<button class="pin p${i+1}" title="${title}"><span>${["🏛","🎬","🖼","🎭","🎵","📚"][i]}</span></button>`).join("");
+    const stores = getStores();
+    const pins = stores.map(store => `<button class="pin ${store.pin} ${isFavoriteStore(store.name) ? "favorite" : ""}" title="${store.name}" data-title="${store.name}" data-category="${store.category.toLowerCase()}" data-search="${store.search}"><span>${store.icon}</span><strong>${store.name}</strong></button>`).join("");
+    const locationShared = sessionStorage.getItem("disapLocationShared") === "true";
     return `<section class="gridmap">
       <div class="panel">
-        <div class="toolbar"><input placeholder="Kulturangebot oder Ort suchen"><button class="chip active">Alle</button><button class="chip">Museum</button><button class="chip">Kino</button><button class="chip">Event</button></div>
-        <div class="map">
-          <div class="river"></div><div class="street s1"></div><div class="street s2"></div><div class="street s3"></div><div class="street s4"></div><div class="street s5"></div>
+        <div class="toolbar radar-toolbar">
+          <input id="radarSearch" placeholder="Laden, Branche oder Ort in Leipzig suchen">
+          <button class="chip active" data-filter="all">Alle</button>
+          <button class="chip" data-filter="favorites">♥ Favoriten</button>
+          <button class="chip" data-filter="gastronomie">Gastro</button>
+          <button class="chip" data-filter="kultur">Kultur</button>
+          <button class="chip" data-filter="einzelhandel">Einzelhandel</button>
+        </div>
+        <div class="map leipzig-map">
+          <iframe class="osm-frame" title="Kartenausschnitt Leipzig Zentrum und Südvorstadt" src="https://www.openstreetmap.org/export/embed.html?bbox=12.3490%2C51.3240%2C12.3950%2C51.3520&layer=mapnik"></iframe>
+          <div class="map-title"><h3>Leipzig Zentrum & Südvorstadt</h3><p>Beispielhafter Kartenausschnitt mit DISAP Partnern</p></div>
+          <div class="map-area-label ml-hbf">Hauptbahnhof</div>
+          <div class="map-area-label ml-zentrum">Zentrum</div>
+          <div class="map-area-label ml-plagwitz">Leipziger Westen</div>
+          <div class="map-area-label ml-sued">Südvorstadt</div>
           ${pins}
-          <div class="tip" id="tip"><h3>Kino Passage</h3><p>Heute 20:15 Uhr. Sammle beim Ticketkauf 80 DISAP Punkte.</p><div class="meta"><span class="pill a">80 Punkte</span><span class="pill">1,2 km</span><span class="pill">Kultur</span></div></div>
+          <div class="user-position ${locationShared ? "" : "hidden"}" id="userPosition"></div>
+          <div class="tip hidden" id="tip"></div>
+          ${locationShared ? "" : `<div class="location-consent" id="locationConsent"><div class="location-card"><div class="location-icon">⌖</div><h3>Standort teilen?</h3><p>DISAP nutzt deinen Standort, um teilnehmende Läden und Angebote in deiner Nähe auf der Karte zu markieren.</p><button class="primary" data-share-location>Standortinformationen teilen</button></div></div>`}
+          <div class="map-attribution">Kartenausschnitt: © OpenStreetMap Mitwirkende</div>
         </div>
       </div>
       <aside class="panel">
-        <div class="ph"><h2>Events im Raum</h2><p>Aktuelle Veranstaltungen teilnehmender DISAP Partner in deiner Umgebung.</p></div>
-        <div class="events">
-          ${this.renderEvent("08","JUN","Filmabend im Kino Passage","20:15 Uhr · 1,2 km entfernt · 80 Punkte beim Ticketkauf")}
-          ${this.renderEvent("09","JUN","Sonderausstellung im Museum","Ganztägig · 0,7 km entfernt · Gratis Eintritt ab 1.000 Punkten")}
-          ${this.renderEvent("10","JUN","Galerie Abend West","18:00 Uhr · 2,0 km entfernt · 2x Punkte auf Getränke")}
-          ${this.renderEvent("12","JUN","Open Stage im Theater Loft","19:30 Uhr · 1,8 km entfernt · Coupon für Studierende aktiv")}
+        <div class="ph"><h2>Teilnehmende Läden</h2><p>Beispielhafte DISAP Partner im Leipziger Kartenbereich.</p></div>
+        <div class="events" id="radarList">
+          ${stores.map(store => this.renderStore(store)).join("")}
         </div>
       </aside>
     </section>`;
   }
 
+  static showStore(title) {
+    const x = mapData[title];
+    if (!x) return;
+    const status = getStoreStatus(x);
+    document.querySelectorAll(".pin").forEach(pin => pin.classList.toggle("selected", pin.dataset.title === title));
+    const tip = document.getElementById("tip");
+    if (tip) {
+      tip.classList.remove("hidden");
+      tip.innerHTML = `<div class="store-detail"><div class="store-top"><div><h3>${x.name}</h3><p>${x.desc}</p></div>${favoriteButtonMarkup(x.name, true)}</div><div class="meta"><span class="pill a">${x.benefit}</span><span class="pill">${x.distance}</span><span class="pill">${x.category}</span></div><div class="hours-line"><span>${x.hoursText}</span><span class="status ${status.className}">${status.text}</span></div><div class="map-actions"><button class="primary">Details</button><button class="secondary">Route</button></div></div>`;
+      bindFavoriteButtons(() => RadarView.applyFilter());
+    }
+  }
+
+  static applyFilter() {
+    const focusPartner = sessionStorage.getItem("disapRadarPartnerFocus");
+    if (focusPartner) {
+      document.querySelectorAll(".pin, .radar-list-item").forEach(el => {
+        const show = el.dataset.title === focusPartner;
+        el.style.display = show ? (el.classList.contains("pin") ? "flex" : "grid") : "none";
+      });
+      const input = document.getElementById("radarSearch");
+      if (input) input.value = focusPartner;
+      document.querySelectorAll(".pin").forEach(pin => pin.classList.toggle("selected", pin.dataset.title === focusPartner));
+      document.getElementById("tip")?.classList.add("hidden");
+      return;
+    }
+
+    const active = document.querySelector(".radar-toolbar .chip.active")?.dataset.filter || "all";
+    const s = (document.getElementById("radarSearch")?.value || "").toLowerCase().trim();
+    document.querySelectorAll(".pin, .radar-list-item").forEach(el => {
+      const favoriteOk = active !== "favorites" || isFavoriteStore(el.dataset.title);
+      const typeOk = active === "all" || active === "favorites" || el.dataset.category === active;
+      const textOk = (el.dataset.search + " " + el.dataset.title).toLowerCase().includes(s);
+      el.style.display = favoriteOk && typeOk && textOk ? (el.classList.contains("pin") ? "flex" : "grid") : "none";
+    });
+  }
+
   static bind() {
-    document.querySelectorAll(".chip").forEach(chip => chip.addEventListener("click", () => {
-      document.querySelectorAll(".chip").forEach(c=>c.classList.remove("active"));
+    const chips = document.querySelectorAll(".radar-toolbar .chip");
+    const input = document.getElementById("radarSearch");
+    chips.forEach(chip => chip.addEventListener("click", () => {
+      sessionStorage.removeItem("disapRadarPartnerFocus");
+      chips.forEach(c => c.classList.remove("active"));
       chip.classList.add("active");
+      RadarView.applyFilter();
     }));
-    document.querySelectorAll(".pin").forEach(pin => pin.addEventListener("click", () => {
-      const x = mapData[pin.title];
-      document.getElementById("tip").innerHTML = `<h3>${x[0]}</h3><p>${x[1]}</p><div class="meta"><span class="pill a">${x[2]}</span><span class="pill">${x[3]}</span><span class="pill">${x[4]}</span></div>`;
-    }));
+    input?.addEventListener("input", () => {
+      sessionStorage.removeItem("disapRadarPartnerFocus");
+      RadarView.applyFilter();
+    });
+    document.querySelector("[data-share-location]")?.addEventListener("click", () => {
+      sessionStorage.setItem("disapLocationShared", "true");
+      document.getElementById("locationConsent")?.classList.add("hidden");
+      document.getElementById("userPosition")?.classList.remove("hidden");
+    });
+    document.querySelectorAll(".pin").forEach(pin => pin.addEventListener("click", () => RadarView.showStore(pin.dataset.title)));
+    document.querySelectorAll("[data-show-store]").forEach(btn => btn.addEventListener("click", () => RadarView.showStore(btn.dataset.showStore)));
+    bindFavoriteButtons(() => RadarView.applyFilter());
+    RadarView.applyFilter();
   }
 }
 
 class AnnouncementsView {
   cat(icon,title,text,active=false){return `<div class="cat ${active?"active":""}"><div class="catico">${icon}</div><div><h4>${title}</h4><p class="muted">${text}</p></div></div>`}
   option(name,value){return `<div class="option"><div class="otop"><span>${name}</span><span>${value}%</span></div><div class="bar"><span style="width:${value}%"></span></div></div>`}
+  renderPost(post) {
+    const bodyExtra = post.survey ? `<div class="survey">${post.survey.map(([name,value]) => this.option(name,value)).join("")}</div>` : post.eventCard ? `<div class="eventcard"><div><h3>${escapeHtml(post.eventCard.title)}</h3><p>${escapeHtml(post.eventCard.text)}</p></div><div class="date">${post.eventCard.day}<small>${post.eventCard.month}</small></div></div>` : `<div class="meta">${post.pills.map(pill => `<span class="pill">${escapeHtml(pill)}</span>`).join("")}</div>`;
+    return `<article class="post" data-post-id="${post.id}" data-type="${post.type}" data-search="${escapeHtml(post.search)}">
+      <div class="posttop"><div class="author"><div class="avatar">🏛</div><div><h3>Stadt Leipzig</h3><p>${escapeHtml(post.meta)}</p></div></div><span class="tag ${post.tagClass}">${post.tag}</span>${bookmarkButtonMarkup(post.id)}</div>
+      <h2>${escapeHtml(post.title)}</h2><p>${escapeHtml(post.text)}</p>
+      ${bodyExtra}
+      <div class="post-actions"><div class="post-actions-left"><button class="primary">${post.buttons[0]}</button> <button class="secondary">${post.buttons[1]}</button></div></div>
+    </article>`;
+  }
   render() {
-    return `<section class="grid3">
-      <aside class="panel hide-mobile">
-        <div class="ph"><h2>Stadtkanal</h2><p>Kommunale Inhalte für Bürgerinnen, Bürger und lokale DISAP Nutzer.</p></div>
-        <div class="city">
-          <div class="citylogo"><div class="seal">🏛</div><div><h3>Stadt Leipzig</h3><p>Offizieller DISAP Partner</p></div></div>
-          ${this.cat("📢","Alle Beiträge","Infos, Events, Umfragen",true)}
-          ${this.cat("ℹ️","Informationen","Neuigkeiten der Kommune")}
-          ${this.cat("📊","Umfragen","Meinung teilen")}
-          ${this.cat("🎪","Events","Veranstaltungen im Raum")}
-        </div>
-      </aside>
+    return `<section class="announcement-grid">
       <main class="panel">
-        <div class="toolbar"><input id="annSearch" placeholder="Ankündigung, Thema oder Event suchen"><button class="chip active" data-filter="all">Alle</button><button class="chip" data-filter="info">Infos</button><button class="chip" data-filter="survey">Umfragen</button><button class="chip" data-filter="event">Events</button></div>
+        <div class="toolbar"><input id="annSearch" placeholder="Ankündigung, Thema oder Event suchen"><button class="chip active" data-filter="all">Alle Beiträge</button><button class="chip" data-filter="bookmarks"><span class="bookmark-chip-label">${bookmarkIconMarkup("bookmark-inline-icon")}<span>Lesezeichen</span></span></button><button class="chip" data-filter="info">Informationen</button><button class="chip" data-filter="survey">Umfragen</button><button class="chip" data-filter="event">Events</button></div>
         <div class="feed">
-          <article class="post" data-type="info" data-search="innenstadt mobilität baustelle information">
-            <div class="posttop"><div class="author"><div class="avatar">🏛</div><div><h3>Stadt Leipzig</h3><p>Heute · Offizielle Information</p></div></div><span class="tag info">Information</span></div>
-            <h2>Neue Mobilitätszone in der Innenstadt</h2><p>Ab nächster Woche wird in Teilen der Innenstadt eine neue Verkehrsführung getestet. Fußwege, Radwege und Lieferzonen sollen dadurch übersichtlicher werden.</p>
-            <div class="meta"><span class="pill">Innenstadt</span><span class="pill">Mobilität</span><span class="pill">Gültig ab Montag</span></div><div><button class="primary">Details ansehen</button> <button class="secondary">Merken</button></div>
-          </article>
-          <article class="post" data-type="survey" data-search="umfrage innenstadt kultur angebot befragung">
-            <div class="posttop"><div class="author"><div class="avatar">🏛</div><div><h3>Stadt Leipzig</h3><p>Gestern · Bürgerumfrage</p></div></div><span class="tag survey">Umfrage</span></div>
-            <h2>Welche Kulturangebote wünscht du dir häufiger?</h2><p>Die Stadt Leipzig möchte lokale Kulturangebote besser auf die Interessen der Bürgerinnen und Bürger abstimmen.</p>
-            <div class="survey">${this.option("Open Air Kino",42)}${this.option("Konzerte im Park",35)}${this.option("Stadtteilfeste",23)}</div><div><button class="primary">Abstimmen</button> <button class="secondary">Teilen</button></div>
-          </article>
-          <article class="post" data-type="event" data-search="event stadtfest leipzig wochenende markt musik">
-            <div class="posttop"><div class="author"><div class="avatar">🏛</div><div><h3>Stadt Leipzig</h3><p>Vor 2 Tagen · Veranstaltung</p></div></div><span class="tag event">Event</span></div>
-            <h2>Stadtteilfest am Wochenende</h2><p>Lokale Händler, Gastronomie, Musik und Kulturangebote nehmen am kommenden Wochenende am Stadtteilfest teil. DISAP Partner bieten zusätzliche Punkteaktionen an.</p>
-            <div class="eventcard"><div><h3>Leipziger Stadtteilfest</h3><p>Samstag · 12:00 bis 22:00 Uhr · Zentrum Süd</p></div><div class="date">15<small>JUN</small></div></div><div><button class="primary">Event anzeigen</button> <button class="secondary">Zum Kalender</button></div>
-          </article>
+          ${announcementData.map(post => this.renderPost(post)).join("")}
         </div>
       </main>
       <aside class="panel">
-        <div class="ph"><h2>Aktuell wichtig</h2><p>Schneller Überblick über laufende Beiträge der Kommune.</p></div>
-        <div class="sidebody"><div class="compact"><h3>3 neue Beiträge</h3><p>Heute veröffentlicht</p></div><div class="compact"><span class="tag survey">Umfrage läuft</span><h3>Kulturangebote in Leipzig</h3><p>Noch 5 Tage abstimmen.</p></div><div class="compact"><span class="tag event">Nächstes Event</span><h3>Stadtteilfest Zentrum Süd</h3><p>Samstag ab 12:00 Uhr.</p></div></div>
+        <div class="ph"><h2>Aktuell wichtig</h2><p>Kurzüberblick über Beiträge und gemerkte Inhalte.</p></div>
+        <div class="sidebody"><div class="compact"><h3>9 Beiträge im Feed</h3><p>Infos, Umfragen und Events der Stadt Leipzig</p></div><div class="compact"><span class="tag survey">Umfrage läuft</span><h3>Fahrradabstellplätze</h3><p>Aktuell Rückmeldungen aus drei Stadtteilen.</p></div><div class="compact"><span class="tag event">Nächstes Event</span><h3>Sommerkino im Park</h3><p>Freitag ab 21:30 Uhr.</p></div></div>
       </aside>
     </section>`;
+  }
+  static applyFilter() {
+    const active = document.querySelector(".toolbar .chip.active")?.dataset.filter || "all";
+    const s = (document.getElementById("annSearch")?.value || "").toLowerCase().trim();
+    document.querySelectorAll(".post").forEach(p => {
+      const bookmarkedOk = active !== "bookmarks" || isBookmarkedPost(p.dataset.postId);
+      const typeOk = active === "all" || active === "bookmarks" || p.dataset.type === active;
+      const textOk = (p.dataset.search + " " + p.innerText).toLowerCase().includes(s);
+      p.style.display = bookmarkedOk && typeOk && textOk ? "grid" : "none";
+    });
   }
   static bind() {
     const chips = document.querySelectorAll(".toolbar .chip");
     const input = document.getElementById("annSearch");
-    const filter = () => {
-      const active = document.querySelector(".toolbar .chip.active")?.dataset.filter || "all";
-      const s = (input.value || "").toLowerCase().trim();
-      document.querySelectorAll(".post").forEach(p => {
-        const typeOk = active === "all" || p.dataset.type === active;
-        const textOk = (p.dataset.search + " " + p.innerText).toLowerCase().includes(s);
-        p.style.display = typeOk && textOk ? "grid" : "none";
-      });
-    };
-    chips.forEach(c=>c.addEventListener("click",()=>{chips.forEach(x=>x.classList.remove("active"));c.classList.add("active");filter()}));
-    input?.addEventListener("input", filter);
+    chips.forEach(c=>c.addEventListener("click",()=>{chips.forEach(x=>x.classList.remove("active"));c.classList.add("active");AnnouncementsView.applyFilter()}));
+    input?.addEventListener("input", () => AnnouncementsView.applyFilter());
+    bindBookmarkButtons(() => AnnouncementsView.applyFilter());
+    AnnouncementsView.applyFilter();
   }
 }
 
+
+const discountCatalog = [
+  { 
+    id: "begleitungGratis", 
+    title: "Begleitperson gratis", 
+    partner: "Kino Passage", 
+    actionType: "Punkte-Prämie", 
+    category: "social", 
+    categoryLabel: "Community", 
+    icon: "👥", 
+    text: "Löse deine DISAP Punkte ein und eine Begleitperson erhält kostenlosen Eintritt zur gleichen Vorstellung.", 
+    valid: "Einlösbar ab 1.500 Punkten" 
+  },
+  { 
+    id: "popcorn", 
+    title: "Kleines Popcorn gratis", 
+    partner: "Kino Passage", 
+    actionType: "Gratis-Zugabe", 
+    category: "culture", 
+    categoryLabel: "Kultur", 
+    icon: "🍿", 
+    text: "Beim Kauf eines Kinotickets erhältst du ein kleines Popcorn kostenlos dazu.", 
+    valid: "Heute verfügbar" 
+  },
+  { 
+    id: "pizza30", 
+    title: "30% Rabatt auf Pizza", 
+    partner: "Pizzeria Napoli", 
+    actionType: "Rabatt-Coupon", 
+    category: "food", 
+    categoryLabel: "Essen", 
+    icon: "🍕", 
+    text: "Spare 30 Prozent auf ausgewählte Pizzen bei diesem teilnehmenden Partner.", 
+    valid: "Nur diese Woche" 
+  },
+  { 
+    id: "kaffee50", 
+    title: "50% auf den 2. Kaffee", 
+    partner: "Café Südplatz", 
+    actionType: "Rabatt-Coupon", 
+    category: "food", 
+    categoryLabel: "Essen", 
+    icon: "☕", 
+    text: "Der zweite Kaffee kostet nur die Hälfte. Ideal für kurze Treffen in der Stadt.", 
+    valid: "Gültig bis Sonntag" 
+  },
+  { 
+    id: "cookie", 
+    title: "1 Cookie zum Kaffee gratis", 
+    partner: "Bäckerei Krone", 
+    actionType: "Gratis-Zugabe", 
+    category: "food", 
+    categoryLabel: "Essen", 
+    icon: "🍪", 
+    text: "Erhalte beim Kauf eines Kaffees einen Cookie kostenlos dazu.", 
+    valid: "Solange der Vorrat reicht" 
+  },
+  { 
+    id: "museum", 
+    title: "Kostenloser Eintritt Museum", 
+    partner: "Museum am Markt", 
+    actionType: "Punkte-Prämie", 
+    category: "culture", 
+    categoryLabel: "Kultur", 
+    icon: "🏛", 
+    text: "Löse deine Punkte für freien Eintritt in eine ausgewählte Ausstellung ein.", 
+    valid: "Ab 1.000 Punkten" 
+  },
+  { 
+    id: "oeffi", 
+    title: "Gratis ÖPNV-Einzelfahrt", 
+    partner: "Stadt Leipzig Mobilität", 
+    actionType: "Mobilitäts-Coupon", 
+    category: "mobility", 
+    categoryLabel: "Mobilität", 
+    icon: "🚋", 
+    text: "Löse deine Punkte für eine kostenlose Einzelfahrt im Leipziger Nahverkehr ein.", 
+    valid: "Ab 1.200 Punkten" 
+  },
+  { 
+    id: "theater", 
+    title: "2 für 1 Theaterabend", 
+    partner: "Theater Loft", 
+    actionType: "2-für-1 Aktion", 
+    category: "culture", 
+    categoryLabel: "Kultur", 
+    icon: "🎭", 
+    text: "Zwei Tickets erhalten und nur eines bezahlen. Gültig für ausgewählte Vorstellungen.", 
+    valid: "Begrenztes Kontingent" 
+  },
+  { 
+    id: "lunch", 
+    title: "Mittagsmenü 20% günstiger", 
+    partner: "Bistro Mitte", 
+    actionType: "Rabatt-Coupon", 
+    category: "food", 
+    categoryLabel: "Essen", 
+    icon: "🥗", 
+    text: "Spare 20 Prozent auf ausgewählte Mittagsgerichte zwischen 11 und 14 Uhr.", 
+    valid: "Werktags" 
+  }
+];
+
+function renderDealCard(deal, compact=false) {
+  return `<article class="${compact ? "deal-card" : "catalog-row"}" data-catalog-row data-category="${deal.category}" data-search="${escapeHtml((deal.title + " " + deal.partner + " " + deal.actionType + " " + deal.categoryLabel + " " + deal.text).toLowerCase())}">
+    <div class="deal-ico">${deal.icon}</div>
+    <div>
+      <h4>${escapeHtml(deal.title)}</h4>
+      <div class="deal-info">${escapeHtml(deal.partner)} <span>· ${escapeHtml(deal.actionType)}</span></div>
+      <p>${escapeHtml(deal.text)}</p>
+      <div class="deal-meta"><span class="deal-chip ${deal.category}">${escapeHtml(deal.categoryLabel)}</span><span class="pill">${escapeHtml(deal.actionType)}</span><span class="pill">${escapeHtml(deal.valid)}</span></div>
+    </div>
+    <div class="deal-side">
+      <span class="${compact ? "deal-chip " + deal.category : "catalog-status"}">${compact ? escapeHtml(deal.categoryLabel) : "Einlösbar"}</span>
+      <button class="deal-show" data-show-deal-partner="${escapeHtml(deal.partner)}">Anzeigen</button>
+    </div>
+  </article>`;
+}
+
+function renderDashboardDeals() {
+  return discountCatalog.map(deal => renderDealCard(deal, true)).join("");
+}
+
+function showPartnerOnRadar(partnerName) {
+  sessionStorage.setItem("disapRadarPartnerFocus", partnerName);
+  location.hash = "radar";
+}
+
+
+function catalogModalMarkup() {
+  return `<div class="modal hidden" id="catalogModal" role="dialog" aria-modal="true" aria-labelledby="catalogTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div><h2 id="catalogTitle">Rabatte und Coupons</h2><p>Vollständige Übersicht deiner aktuell einlösbaren DISAP Vorteile.</p></div>
+        <button class="modal-close" data-close-catalog aria-label="Katalog schließen">×</button>
+      </div>
+      <div class="history-tools">
+        <div class="history-summary">Aktuell verfügbar: <strong>${discountCatalog.length} Angebote</strong></div>
+        <div class="history-filters" aria-label="Rabatte und Coupons filtern">
+          <button class="chip active" data-catalog-filter="all">Alle</button>
+          <button class="chip" data-catalog-filter="food">Essen</button>
+          <button class="chip" data-catalog-filter="culture">Kultur</button>
+          <button class="chip" data-catalog-filter="mobility">Mobilität</button>
+          <button class="chip" data-catalog-filter="social">Community</button>
+        </div>
+      </div>
+      <div class="catalog-search"><input id="catalogSearch" placeholder="Rabatt, Coupon oder Partner suchen"></div>
+      <div class="catalog-grid" id="catalogList">
+        ${discountCatalog.map(deal => renderDealCard(deal, false)).join("")}
+      </div>
+      <div class="catalog-empty" id="catalogEmpty">Für diesen Filter gibt es keine Angebote.</div>
+    </div>
+  </div>`;
+}
+
+function openCatalogOnProfile() {
+  sessionStorage.setItem("disapOpenCatalogOnProfile", "true");
+  location.hash = "profile";
+}
+
+function applyCatalogFilter() {
+  const active = document.querySelector("[data-catalog-filter].active")?.dataset.catalogFilter || "all";
+  const search = (document.getElementById("catalogSearch")?.value || "").toLowerCase().trim();
+  let visible = 0;
+  document.querySelectorAll("#catalogModal [data-catalog-row]").forEach(row => {
+    const categoryOk = active === "all" || row.dataset.category === active;
+    const searchOk = (row.dataset.search || row.innerText).toLowerCase().includes(search);
+    const show = categoryOk && searchOk;
+    row.style.display = show ? "grid" : "none";
+    if (show) visible += 1;
+  });
+  document.getElementById("catalogEmpty")?.classList.toggle("visible", visible === 0);
+}
+
+function bindCatalogModal() {
+  const modal = document.getElementById("catalogModal");
+  const open = () => {
+    modal?.classList.remove("hidden");
+    applyCatalogFilter();
+  };
+  document.querySelectorAll("[data-open-catalog]").forEach(btn => btn.addEventListener("click", event => {
+    event.preventDefault();
+    if (modal) open();
+    else openCatalogOnProfile();
+  }));
+  document.querySelectorAll("[data-close-catalog]").forEach(btn => btn.addEventListener("click", () => modal?.classList.add("hidden")));
+  document.querySelectorAll("[data-show-deal-partner]").forEach(btn => btn.addEventListener("click", event => {
+    event.preventDefault();
+    showPartnerOnRadar(btn.dataset.showDealPartner);
+  }));
+  modal?.addEventListener("click", event => {
+    if (event.target === modal) modal.classList.add("hidden");
+  });
+  document.querySelectorAll("[data-catalog-filter]").forEach(btn => btn.addEventListener("click", () => {
+    document.querySelectorAll("[data-catalog-filter]").forEach(x => x.classList.remove("active"));
+    btn.classList.add("active");
+    applyCatalogFilter();
+  }));
+  document.getElementById("catalogSearch")?.addEventListener("input", applyCatalogFilter);
+  if (sessionStorage.getItem("disapOpenCatalogOnProfile") === "true") {
+    sessionStorage.removeItem("disapOpenCatalogOnProfile");
+    open();
+  }
+}
+
+
+const pointHistory = [
+  { type: "collect", shop: "Café Südplatz", date: "16.06.2026", isoDate: "2026-06-16", time: "09:42 Uhr", points: 80, note: "Punkte gesammelt" },
+  { type: "collect", shop: "Bäckerei Krone", date: "15.06.2026", isoDate: "2026-06-15", time: "12:18 Uhr", points: 190, note: "Punkte auf Einkauf gesammelt" },
+  { type: "redeem", shop: "Café Südplatz", date: "14.06.2026", isoDate: "2026-06-14", time: "08:55 Uhr", points: 250, note: "Prämie eingelöst" },
+  { type: "collect", shop: "Kino Passage", date: "12.06.2026", isoDate: "2026-06-12", time: "20:18 Uhr", points: 145, note: "Punkte beim Ticketkauf gesammelt" },
+  { type: "collect", shop: "Bar Acht", date: "10.06.2026", isoDate: "2026-06-10", time: "21:36 Uhr", points: 520, note: "Aktionspunkte gesammelt" },
+  { type: "redeem", shop: "Flora Werkstatt", date: "08.06.2026", isoDate: "2026-06-08", time: "17:04 Uhr", points: 400, note: "Gutschein eingelöst" },
+  { type: "collect", shop: "Flora Werkstatt", date: "04.06.2026", isoDate: "2026-06-04", time: "16:41 Uhr", points: 310, note: "Punkte gesammelt" },
+  { type: "collect", shop: "Stadtbibliothek", date: "31.05.2026", isoDate: "2026-05-31", time: "14:20 Uhr", points: 120, note: "Punkte für Kulturaktion gesammelt" },
+  { type: "redeem", shop: "Bäckerei Krone", date: "24.05.2026", isoDate: "2026-05-24", time: "11:07 Uhr", points: 300, note: "Coupon eingelöst" },
+  { type: "collect", shop: "Café Südplatz", date: "15.05.2026", isoDate: "2026-05-15", time: "09:12 Uhr", points: 340, note: "Punkte gesammelt" },
+  { type: "collect", shop: "Kino Passage", date: "28.04.2026", isoDate: "2026-04-28", time: "19:52 Uhr", points: 250, note: "Punkte beim Ticketkauf gesammelt" },
+  { type: "collect", shop: "Bar Acht", date: "12.04.2026", isoDate: "2026-04-12", time: "22:15 Uhr", points: 180, note: "Punkte gesammelt" },
+  { type: "collect", shop: "Flora Werkstatt", date: "25.03.2026", isoDate: "2026-03-25", time: "15:33 Uhr", points: 95, note: "Punkte gesammelt" }
+];
+
+function currentPointBalance() {
+  return pointHistory.reduce((sum, item) => sum + (item.type === "collect" ? item.points : -item.points), 0);
+}
+
+function formatPoints(value) {
+  return new Intl.NumberFormat("de-DE").format(value);
+}
+
+function renderPointHistoryItem(item) {
+  const isCollect = item.type === "collect";
+  return `<article class="history-row ${isCollect ? "gain" : "loss"}" data-history-row data-type="${item.type}" data-date="${item.isoDate}">
+    <div class="history-icon">${isCollect ? "+" : "−"}</div>
+    <div>
+      <h4>${escapeHtml(item.shop)}</h4>
+      <p>${escapeHtml(item.note)} · ${escapeHtml(item.date)} · ${escapeHtml(item.time)}</p>
+    </div>
+    <strong class="history-points">${isCollect ? "+" : "−"}${item.points} Punkte</strong>
+  </article>`;
+}
+
+function historyModalMarkup() {
+  const balance = currentPointBalance();
+  return `<div class="modal hidden" id="historyModal" role="dialog" aria-modal="true" aria-labelledby="historyTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div><h2 id="historyTitle">Punktehistorie</h2><p>Deine DISAP Interaktionen mit teilnehmenden Partnern. Die Summe der Historie ergibt deinen aktuellen Punktestand.</p></div>
+        <button class="modal-close" data-close-history aria-label="Historie schließen">×</button>
+      </div>
+      <div class="history-tools">
+        <div class="history-summary">Aktueller Stand: <strong>${formatPoints(balance)} Punkte</strong></div>
+        <div class="history-filters" aria-label="Historie filtern">
+          <button class="chip active" data-history-filter="all">Alle</button>
+          <button class="chip" data-history-filter="week">Letzte Woche</button>
+          <button class="chip" data-history-filter="month">Letzter Monat</button>
+          <button class="chip" data-history-filter="collect">Gesammelt</button>
+          <button class="chip" data-history-filter="redeem">Eingelöst</button>
+        </div>
+      </div>
+      <div class="history-list" id="historyList">
+        ${pointHistory.map(item => renderPointHistoryItem(item)).join("")}
+      </div>
+      <div class="history-empty" id="historyEmpty">Für diesen Filter gibt es keine Einträge.</div>
+    </div>
+  </div>`;
+}
+
 class QRView {
-  render(){return `<section class="grid2"><div class="panel"><div class="ph"><h2>Persönlicher QR Code</h2><p>Dieser Bereich kann später für Sammeln, Einlösen und Mobile Payment genutzt werden.</p></div><div class="section"><div class="scan"><div><h3>DISAP Code</h3><p>Beim teilnehmenden Unternehmen vorzeigen und Punkte sammeln.</p></div><div class="qr"></div></div></div></div><div class="panel"><div class="ph"><h2>Letzte Aktivitäten</h2><p>Beispielhafte Transaktionen deines Kontos.</p></div><div class="events"><article class="event"><h3>Café Südplatz</h3><p>+80 Punkte · Heute</p></article><article class="event"><h3>Kino Passage</h3><p>+145 Punkte · Gestern</p></article><article class="event"><h3>Bäckerei Krone</h3><p>Coupon eingelöst · Montag</p></article></div></div></section>`}
+  constructor(username) {
+    this.username = username;
+  }
+
+  render(){
+    return `<section class="qr-page">
+      <div class="panel qr-main-panel">
+        <div class="qr-stage">
+          <div class="qr qr-large" aria-label="Persönlicher DISAP QR Code"></div>
+        </div>
+      </div>
+      <div class="qr-guide">
+        <h3>So verwendest du deinen QR-Code</h3>
+        <p>Zeige ihn an der Kasse bei unseren teilnehmenden Partnern. Der Code kann dort gescannt werden, damit du Punkte sammelst, Vorteile einlöst oder später direkt über DISAP bezahlen kannst.</p>
+      </div>
+    </section>`
+  }
 }
 
 class ProfileView {
-  render(){return `<section class="grid2"><div class="panel"><div class="ph"><h2>Benutzerprofil</h2><p>Grunddaten für die Demo Sicht des Endanwenders.</p></div><div class="sidebody"><div class="compact"><h3>Name</h3><p>Niklas Radestock</p></div><div class="compact"><h3>Status</h3><p>Aktives DISAP Konto</p></div><div class="compact"><h3>Punkte</h3><p>1.280 Punkte gesammelt</p></div></div></div><div class="panel"><div class="ph"><h2>Einstellungen</h2><p>Beispielhafte App Einstellungen.</p></div><div class="sidebody"><div class="compact"><h3>Push Benachrichtigungen</h3><p>Aktiviert für Coupons, Events und Stadtankündigungen.</p></div><div class="compact"><h3>Standortdienste</h3><p>Aktiviert für Aktionsradar und lokale Angebote.</p></div><div class="compact"><h3>Datenschutz</h3><p>Einwilligungen und Datenfreigaben verwalten.</p></div></div></div></section>`}
+  constructor(username) {
+    this.username = username;
+  }
+
+  renderHistoryItem(item) {
+    const isCollect = item.type === "collect";
+    return `<article class="history-row ${isCollect ? "gain" : "loss"}">
+      <div class="history-icon">${isCollect ? "+" : "−"}</div>
+      <div>
+        <h4>${escapeHtml(item.shop)}</h4>
+        <p>${escapeHtml(item.note)} · ${escapeHtml(item.date)} · ${escapeHtml(item.time)}</p>
+      </div>
+      <strong class="history-points">${isCollect ? "+" : "−"}${item.points} Punkte</strong>
+    </article>`;
+  }
+
+  render(){
+    const username = escapeHtml(this.username);
+    return `<section class="grid2">
+      <div class="panel">
+        <div class="ph"><h2>Benutzerprofil</h2><p>Grunddaten für die Demo Sicht des Endanwenders.</p></div>
+        <div class="sidebody">
+          <div class="compact"><h3>Name</h3><p>${username}</p></div>
+          <div class="compact"><h3>Status</h3><p>Aktives DISAP Konto</p></div>
+          <div class="compact points-compact">
+            <div>
+              <h3>Aktueller Punktestand</h3>
+              <p>1.280 Punkte gesammelt</p>
+            </div>
+            <button class="history-link" data-open-history>Historie</button>
+          </div>
+          <div class="compact points-compact">
+            <div>
+              <h3>Rabatte und Coupons</h3>
+              <p>${discountCatalog.length} Angebote verfügbar</p>
+            </div>
+            <button class="history-link" data-open-catalog>Katalog</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ph"><h2>Einstellungen</h2><p>Beispielhafte App Einstellungen.</p></div>
+        <div class="sidebody"><div class="compact"><h3>Push Benachrichtigungen</h3><p>Aktiviert für Coupons, Events und Stadtankündigungen.</p></div><div class="compact"><h3>Standortdienste</h3><p>Aktiviert für Aktionsradar und lokale Angebote.</p></div><div class="compact"><h3>Datenschutz</h3><p>Einwilligungen und Datenfreigaben verwalten.</p></div></div>
+      </div>
+      ${historyModalMarkup()}${catalogModalMarkup()}
+    </section>`
+  }
+
+  static bind() {
+    const modal = document.getElementById("historyModal");
+    const open = () => modal?.classList.remove("hidden");
+    const close = () => modal?.classList.add("hidden");
+    const applyHistoryFilter = filter => {
+      const rows = document.querySelectorAll("[data-history-row]");
+      const empty = document.getElementById("historyEmpty");
+      const today = new Date("2026-06-16T12:00:00");
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const rowDate = new Date(`${row.dataset.date}T12:00:00`);
+        const diffDays = Math.floor((today - rowDate) / 86400000);
+        let show = true;
+
+        if (filter === "week") show = diffDays >= 0 && diffDays <= 7;
+        if (filter === "month") show = diffDays >= 0 && diffDays <= 30;
+        if (filter === "collect") show = row.dataset.type === "collect";
+        if (filter === "redeem") show = row.dataset.type === "redeem";
+
+        row.classList.toggle("hidden", !show);
+        if (show) visibleCount += 1;
+      });
+
+      empty?.classList.toggle("visible", visibleCount === 0);
+    };
+
+    document.querySelectorAll("[data-open-history]").forEach(btn => btn.addEventListener("click", open));
+    document.querySelectorAll("[data-close-history]").forEach(btn => btn.addEventListener("click", close));
+    document.querySelectorAll("[data-history-filter]").forEach(btn => btn.addEventListener("click", () => {
+      document.querySelectorAll("[data-history-filter]").forEach(item => item.classList.remove("active"));
+      btn.classList.add("active");
+      applyHistoryFilter(btn.dataset.historyFilter || "all");
+    }));
+    modal?.addEventListener("click", event => {
+      if (event.target === modal) close();
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
+        close();
+        document.getElementById("catalogModal")?.classList.add("hidden");
+      }
+    }, { once: true });
+    bindCatalogModal();
+  }
 }
 
 new DemoApp(document.getElementById("app")).init();
